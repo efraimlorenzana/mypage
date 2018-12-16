@@ -5,13 +5,15 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-particles-js": "^2.4.2",
     "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:sass": "node-sass src/Sass/style.scss src/index.css -w"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }

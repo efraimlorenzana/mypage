@@ -1,0 +1,30 @@
+.progressBar {
+    padding: .5rem 3rem;
+    width: 75%;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        color: var(--color-progress-label);
+    }
+
+    &__progress {
+        border: 2px solid var(--color-progress-label);
+        height: 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: var(--color-grey-dark-2);
+
+        &-bar {
+            height: 100%;
+            text-align: center;
+            background-color: var(--color-progress-bar);
+            width: 20px;
+            font-size: small;
+        }
+    }
+}

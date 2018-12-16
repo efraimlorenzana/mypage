@@ -1,0 +1,7 @@
+.Skills {
+    @include clearFix;
+    background-image: linear-gradient(to bottom right, 
+                    var(--color-primary-light),
+                    var(--color-primary-dark));
+    padding-bottom: 5rem;
+}
