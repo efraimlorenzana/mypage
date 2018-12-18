@@ -4,9 +4,12 @@
 
 @import 'Base/base';
 
+@import 'Components/achievement-file';
 @import 'Components/navigation';
 @import 'Components/progress-bar';
+@import 'Components/project';
 
 @import 'Pages/App';
 @import 'Pages/Main';
+@import 'Pages/Portfolio';
 @import 'Pages/Skills';

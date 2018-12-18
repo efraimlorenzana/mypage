@@ -100,7 +100,7 @@ export const projects = [
 	},
 	{ // New Project Template
 		title: "Empty",
-		description: "please upload new project",
+		description: "new project coming soon",
 		tech: "Not Applicable",
 		site: "#",
 		github: "#",
@@ -161,4 +161,14 @@ export const tech_app = [
 		app: "Excel Macros",
 		img: "macro.png"
 	},
+];
+
+export const achievement = [
+	{
+		title: "Programmer of the Year",
+		source: "Academic",
+		issuer: "AMA College Daet Campus",
+		date: "SY: 2009-2010",
+		file: "https://drive.google.com/file/d/1fr_GRJIbP06ZtfAxYnp7rMpmYI5Np1Kp/preview"
+	}
 ];

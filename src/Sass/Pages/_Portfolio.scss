@@ -1,0 +1,9 @@
+.Portfolio {
+    padding-bottom: 5rem;
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

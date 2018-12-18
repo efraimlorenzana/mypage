@@ -2,6 +2,7 @@ import React from 'react';
 import Main from './Main';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import Achievement from './Achievement';
 
 const Content = () => {
     const elements = (
@@ -9,6 +10,7 @@ const Content = () => {
             <Main />
             <Skills />
             <Portfolio />
+            <Achievement />
         </div>
     );
 

@@ -10,16 +10,24 @@ const Navigation = () => {
 
             <ul className="navigation__list">
                 <li className="navigation__item">
-                    <a href="#" className="navigation__link">Home</a>
+                    <a href="#main" className="navigation__link">Home</a>
                 </li>
                 <li className="navigation__item">
-                    <a href="#" className="navigation__link">Skills</a>
+                    <a href="#skills" className="navigation__link">Skills</a>
                 </li>
                 <li className="navigation__item">
-                    <a href="#" className="navigation__link">My Work</a>
+                    <a href="#portfolio" className="navigation__link">My Work</a>
                 </li>
                 <li className="navigation__item">
                     <a href="#" className="navigation__link">Achievement</a>
+                </li>
+                <li className="navigation__item">
+                    <a href="https://drive.google.com/file/d/1N5kWWseeZeY5HTq-rqxDyzFnHfCEoiY0/view" 
+                    className="navigation__link"
+                    target="_blank"
+                    >
+                        Resume
+                    </a>
                 </li>
                 <li className="navigation__item">
                     <a href="#" className="navigation__link">Contact</a>

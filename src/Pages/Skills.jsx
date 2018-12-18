@@ -7,11 +7,11 @@ class Skills extends Component {
     render () {
         const elements = (
             <section id="skills" className="Skills">
-            <h2>My Skill set</h2>
-            
-            {
-                skills.map((d, i) => <ProgressBar key={i} data={d} />)
-            }
+                <h2>My Skill set</h2>
+                
+                {
+                    skills.map((d, i) => <ProgressBar key={i} data={d} />)
+                }
             </section>
             );
             
@@ -19,4 +19,4 @@ class Skills extends Component {
         }
     }
     
-    export default Skills;
+export default Skills;
