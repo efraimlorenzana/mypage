@@ -47,6 +47,10 @@
                 // width: 100%;
                 padding: 0 3rem;
 
+                @include respond(res1100) {
+                    
+                }
+
                 & > h2 {
                     margin-bottom: 2rem;
                 }
@@ -105,13 +109,23 @@
                         & > svg {
                             width: 5rem;
                             height: 5rem;
+
+                            @include respond(res1200) {
+                                width: 3rem;
+                                height: 3rem;
+                            }
+
+                            @include respond(res1100) {
+                                width: 6rem;
+                                height: 6rem;
+                            }
                         }
                     }
                 }
             }
         }
 
-        p {
+        div {
             text-align: center;
             text-transform: uppercase;
             font-weight: 700;
@@ -119,6 +133,11 @@
 
             & > ul {
                 display: inline-block;
+
+                @include respond(res1100) {
+                    display: block;
+                    margin-bottom: 2rem;
+                }
 
                 & > li {
                     list-style: none;

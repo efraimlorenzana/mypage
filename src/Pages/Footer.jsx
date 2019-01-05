@@ -175,7 +175,7 @@ class Footer extends Component {
 
                     <hr/>
 
-                    <p>
+                    <div>
                         <ul className="footer__nav">
                             <li>
                                 <a href="#main">Home</a> |
@@ -200,7 +200,7 @@ class Footer extends Component {
                         </ul>
 
                         &copy; 2019 My Official Page
-                    </p>
+                    </div>
                 </div>
 
             </section>

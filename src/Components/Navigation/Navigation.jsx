@@ -8,6 +8,11 @@ const Navigation = () => {
                 <img src={Logo} alt="Logo" className="navigation__logo--file"/>
             </div>
 
+            <input className="navigation__button" type="checkbox" id="navButton"/>
+            <label className="navigation__label" htmlFor="navButton">
+                <span></span>
+            </label>
+
             <ul className="navigation__list">
                 <li className="navigation__item">
                     <a href="#main" className="navigation__link">Home</a>

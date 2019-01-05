@@ -6,3 +6,65 @@
         clear: both;
     }
 }
+
+@mixin respond($screen) {
+    @if $screen == res300 {
+        @media only screen and (max-width: 18.75em) { @content }; // 300px
+    }
+
+    @if $screen == res400 {
+        @media only screen and (max-width: 25em) { @content }; // 400px
+    }
+
+    @if $screen == res500 {
+        @media only screen and (max-width: 31.25em) { @content }; // 500px
+    }
+
+    @if $screen == res600 {
+        @media only screen and (max-width: 37.5em) { @content }; // 600px
+    }
+
+    @if $screen == res700 {
+        @media only screen and (max-width: 43.75em) { @content }; // 700px
+    }
+
+    @if $screen == res800 {
+        @media only screen and (max-width: 50em) { @content }; // 800px
+    }
+
+    @if $screen == res900 {
+        @media only screen and (max-width: 56.25em) { @content }; // 900px
+    }
+
+    @if $screen == res1000 {
+        @media only screen and (max-width: 62.55em) { @content }; // 1000px
+    }
+
+    @if $screen == res1100 {
+        @media only screen and (max-width: 68.75em) { @content }; // 1100px
+    }
+
+    @if $screen == res1200 {
+        @media only screen and (max-width: 75em) { @content }; // 1200px
+    }
+
+    @if $screen == res1300 {
+        @media only screen and (max-width: 81.25em) { @content }; // 1300px
+    }
+
+    @if $screen == res1500 {
+        @media only screen and (min-width: 93.75em) { @content }; // 1500px
+    }
+
+    @if $screen == res1600 {
+        @media only screen and (min-width: 100em) { @content }; // 1600px
+    }
+
+    @if $screen == res1700 {
+        @media only screen and (min-width: 106.25em) { @content }; // 1700px
+    }
+
+    @if $screen == res1800 {
+        @media only screen and (min-width: 112.5em) { @content }; // 1800px
+    }
+}
