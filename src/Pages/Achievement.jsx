@@ -14,9 +14,11 @@ class Achievement extends Component {
             <section id="achievement" className="Achievement">
                 <h2>Achievement</h2>
 
-                {
-                    this.state.achievement.map((d,i) => <AchievementFile key={i} details={d} />)
-                }
+                <div className="gallery">
+                    {
+                        this.state.achievement.map((d,i) => <AchievementFile key={i} details={d} />)
+                    }
+                </div>
             </section>
         );
 

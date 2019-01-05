@@ -3,7 +3,7 @@ import Logo from './logo.png';
 
 const Navigation = () => {
     const elements = (
-        <nav className="navigation">
+        <nav className="navigation sticky">
             <div className="navigation__logo">
                 <img src={Logo} alt="Logo" className="navigation__logo--file"/>
             </div>
@@ -19,18 +19,19 @@ const Navigation = () => {
                     <a href="#portfolio" className="navigation__link">My Work</a>
                 </li>
                 <li className="navigation__item">
-                    <a href="#" className="navigation__link">Achievement</a>
+                    <a href="#achievement" className="navigation__link">Achievement</a>
                 </li>
                 <li className="navigation__item">
                     <a href="https://drive.google.com/file/d/1N5kWWseeZeY5HTq-rqxDyzFnHfCEoiY0/view" 
                     className="navigation__link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >
                         Resume
                     </a>
                 </li>
                 <li className="navigation__item">
-                    <a href="#" className="navigation__link">Contact</a>
+                    <a href="#footer" className="navigation__link">Contact</a>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,141 @@
+.Footer {
+    background-color: var(--color-grey-dark-1);
+    min-height: 30rem;
+    position: relative;
+    padding: 5rem;
+    
+    display: flex;
+    align-items: flex-end;
+    
+    & > .social {
+        position: absolute;
+        top: -3.5rem;
+        right: 3rem;
+        
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 2rem;
+                
+                // background-color: var(--color-primary);
+                background-image: linear-gradient(var(--color-grey-dark-1), var(--color-primary));
+                padding: 2rem;
+                border-radius: 50%;
+                border: 2px solid var(--color-grey-dark-1);
+                
+                a {
+                    svg {
+                        width: 4rem;
+                        height: 4rem;
+                        // stroke: var(--color-grey-dark-1);
+                    }
+                }
+            }
+        }
+    }
+    
+    &__text {
+        width: 100%;
+        margin-top: 3rem;
+        color: white;
+
+        &--contact {
+            display: flex;
+
+            & .col1 {
+                // width: 100%;
+                padding: 0 3rem;
+
+                & > h2 {
+                    margin-bottom: 2rem;
+                }
+
+                & > ul {
+                    margin-left: 3rem;
+
+                    li {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+
+                        &:not(:last-child) {
+                            margin-bottom: 1rem;
+                        }
+
+                        & > svg {
+                            width: 2rem;
+                            height: 2rem;
+                            margin-right: 1rem;
+                            fill: currentColor;
+                        }
+
+                        span {
+                            font-weight: 700;
+                            display: inline-block;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            & .col2 {
+                width: 100%;
+                
+                h2 {
+                    text-align: center;
+                }
+
+                .tech-gallery {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    height: 100%;
+
+                    
+
+                    span {
+                        text-align: center;
+                        & > div {
+                            font-size: 1rem;
+                        }
+
+                        & > svg {
+                            width: 5rem;
+                            height: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 3px;
+
+            & > ul {
+                display: inline-block;
+
+                & > li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 1rem;  
+                    
+                    & > a {
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,10 @@
     --color-primary-light:#FF3366;
     --color-primary-dark: #BA265D;
 
+    // --color-primary: blue;
+    // --color-primary-light:red;
+    // --color-primary-dark: green;
+
     --color-white-1: #ffffff;
     --color-white-2: #e8e8e8;
     --color-white-3: #e0e0e0;
@@ -16,7 +20,7 @@
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
 
-    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .5);
 
     ///Main Section
     --color-heading-bg: #333;
@@ -26,5 +30,5 @@
     --color-progress-label: #faf9f9;
 
     // Project
-    --color-project-bg:#0e0e0e4f;
+    --color-project-bg:#f7efeff2;
 }

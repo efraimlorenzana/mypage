@@ -3,6 +3,7 @@ import Main from './Main';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Achievement from './Achievement';
+import Footer from './Footer';
 
 const Content = () => {
     const elements = (
@@ -11,6 +12,7 @@ const Content = () => {
             <Skills />
             <Portfolio />
             <Achievement />
+            <Footer />
         </div>
     );
 

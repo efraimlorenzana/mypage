@@ -12,11 +12,11 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .5);
   --color-heading-bg: #333;
   --color-progress-bar: #0fe60c;
   --color-progress-label: #faf9f9;
-  --color-project-bg:#0e0e0e4f; }
+  --color-project-bg:#f7efeff2; }
 
 *::before,
 *,
@@ -40,7 +40,7 @@ body {
   background-size: cover;
   padding: 3rem 6rem; }
 
-code {
+.code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 .main__bg {
@@ -67,11 +67,46 @@ section {
     text-align: center;
     margin: 5rem 0; }
 
+hr {
+  margin: 5rem 0;
+  border: 1px solid var(--color-primary); }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99999; }
+
 .achievement-file {
-  padding: 3rem; }
+  padding: 3rem;
+  text-align: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  background-color: var(--color-project-bg);
+  box-shadow: var(--shadow-dark);
+  position: relative;
+  margin-bottom: 3rem; }
   .achievement-file__embeded {
     width: 100%;
     height: 30rem; }
+  .achievement-file > span.sub-value {
+    display: block;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    .achievement-file > span.sub-value:nth-child(4) {
+      margin-bottom: 2rem; }
+  .achievement-file img {
+    width: 40rem; }
+  .achievement-file > a {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem; }
+    .achievement-file > a > svg {
+      width: 6rem;
+      height: 6rem;
+      pointer-events: none;
+      fill: currentColor; }
 
 .navigation {
   display: flex;
@@ -150,7 +185,8 @@ section {
   background-color: var(--color-project-bg);
   margin-bottom: 3rem;
   position: relative;
-  border: 1px solid var(--color-primary); }
+  border: 1px solid var(--color-primary);
+  box-shadow: var(--shadow-dark); }
   .project__image {
     width: 100%; }
     .project__image--photo {
@@ -188,9 +224,105 @@ section {
   .project__icon--site {
     fill: currentColor; }
 
+.Achievement {
+  background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+  padding-bottom: 5rem; }
+  .Achievement::before, .Achievement::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .Achievement .gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+
 .App {
   background-color: rgba(255, 255, 255, 0.8);
   min-height: 90vh; }
+
+.Footer {
+  background-color: var(--color-grey-dark-1);
+  min-height: 30rem;
+  position: relative;
+  padding: 5rem;
+  display: flex;
+  align-items: flex-end; }
+  .Footer > .social {
+    position: absolute;
+    top: -3.5rem;
+    right: 3rem; }
+    .Footer > .social ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 2rem;
+      background-image: linear-gradient(var(--color-grey-dark-1), var(--color-primary));
+      padding: 2rem;
+      border-radius: 50%;
+      border: 2px solid var(--color-grey-dark-1); }
+      .Footer > .social ul li a svg {
+        width: 4rem;
+        height: 4rem; }
+  .Footer__text {
+    width: 100%;
+    margin-top: 3rem;
+    color: white; }
+    .Footer__text--contact {
+      display: flex; }
+      .Footer__text--contact .col1 {
+        padding: 0 3rem; }
+        .Footer__text--contact .col1 > h2 {
+          margin-bottom: 2rem; }
+        .Footer__text--contact .col1 > ul {
+          margin-left: 3rem; }
+          .Footer__text--contact .col1 > ul li {
+            list-style: none;
+            display: flex;
+            align-items: center; }
+            .Footer__text--contact .col1 > ul li:not(:last-child) {
+              margin-bottom: 1rem; }
+            .Footer__text--contact .col1 > ul li > svg {
+              width: 2rem;
+              height: 2rem;
+              margin-right: 1rem;
+              fill: currentColor; }
+            .Footer__text--contact .col1 > ul li span {
+              font-weight: 700;
+              display: inline-block;
+              letter-spacing: 2px; }
+      .Footer__text--contact .col2 {
+        width: 100%; }
+        .Footer__text--contact .col2 h2 {
+          text-align: center; }
+        .Footer__text--contact .col2 .tech-gallery {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          height: 100%; }
+          .Footer__text--contact .col2 .tech-gallery span {
+            text-align: center; }
+            .Footer__text--contact .col2 .tech-gallery span > div {
+              font-size: 1rem; }
+            .Footer__text--contact .col2 .tech-gallery span > svg {
+              width: 5rem;
+              height: 5rem; }
+    .Footer__text p {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 3px; }
+      .Footer__text p > ul {
+        display: inline-block; }
+        .Footer__text p > ul > li {
+          list-style: none;
+          display: inline-block;
+          margin-right: 1rem; }
+          .Footer__text p > ul > li > a {
+            text-decoration: none;
+            color: white; }
+            .Footer__text p > ul > li > a:hover {
+              text-decoration: none;
+              color: var(--color-primary); }
 
 .main__heading {
   display: flex;

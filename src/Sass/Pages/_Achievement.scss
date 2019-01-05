@@ -1,0 +1,17 @@
+.Achievement {
+    background-image: linear-gradient(to bottom right, 
+                        var(--color-primary-light),
+                        var(--color-primary-dark));
+    @include clearFix;
+    padding-bottom: 5rem;
+
+    & > h2 {
+        // margin-top: 5rem;
+    }
+
+    & .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}

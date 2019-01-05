@@ -169,6 +169,15 @@ export const achievement = [
 		source: "Academic",
 		issuer: "AMA College Daet Campus",
 		date: "SY: 2009-2010",
-		file: "https://drive.google.com/file/d/1fr_GRJIbP06ZtfAxYnp7rMpmYI5Np1Kp/preview"
+		file: "https://drive.google.com/file/d/1fr_GRJIbP06ZtfAxYnp7rMpmYI5Np1Kp/view?usp=sharing",
+		img: "cert1.png"
+	},
+	{
+		title: "Top Performer",
+		source: "Academic / Bootcamp",
+		issuer: "TUITT Philippines",
+		date: "May 2018 to November 2018",
+		file: "https://drive.google.com/file/d/1dR5KBpesWHdEWezFC8yQneyCrLFtv20q/view?usp=sharing",
+		img: "cert2.png"
 	}
 ];
