@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/mypage/static/media/gradient.7cbdaf68.png"
   },
   {
-    "revision": "07e5af602aaef8d95960",
+    "revision": "ea160ae9ef2f39fe0cea",
     "url": "/mypage/static/css/main.16614029.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/mypage/static/media/easymarket.0e5620ee.jpg"
   },
   {
-    "revision": "07e5af602aaef8d95960",
-    "url": "/mypage/static/js/main.07e5af60.chunk.js"
+    "revision": "ea160ae9ef2f39fe0cea",
+    "url": "/mypage/static/js/main.ea160ae9.chunk.js"
   },
   {
     "revision": "9d33c4be44a771a6f21225900edbdd60",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/mypage/static/media/cert2.f5b308f6.png"
   },
   {
-    "revision": "f49f8b0990a44c69a61c39c604acce3d",
+    "revision": "6d56b3e9fcc391444111beee1977638f",
     "url": "/mypage/index.html"
   }
 ];
