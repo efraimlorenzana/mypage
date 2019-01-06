@@ -3,6 +3,10 @@
     width: 75%;
     margin: 0 auto;
 
+    @include respond(res800) {
+        width: 100%;   
+    }
+
     &:not(:last-child) {
         margin-bottom: 1rem;
     }
@@ -18,6 +22,10 @@
         border-radius: 1rem;
         overflow: hidden;
         background-color: var(--color-grey-dark-2);
+
+        @include respond(res500) {
+            height: 2.7rem;
+        }
 
         &-bar {
             height: 100%;

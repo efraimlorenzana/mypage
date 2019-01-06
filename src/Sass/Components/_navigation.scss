@@ -16,6 +16,10 @@
         
         &--file {
             height: 100%;
+
+            @include respond(res1000) {
+                padding-top: 2rem;
+            }
         }
     }
 
@@ -91,7 +95,10 @@
     &__button:checked ~&__list {
         @include respond(res1000) {
             opacity: 1;
+            visibility: visible;
             height: 35rem;
+            background-color: white;
+            // margin-top: -8rem;
         }
     }
     
@@ -101,6 +108,7 @@
         @include respond(res1000) {
             transition: all .8s;
             opacity: 0;
+            visibility: hidden;
             height: 0;
         }
     }
@@ -182,5 +190,12 @@
             position: relative;
             z-index: 10;
         }
+    }
+}
+
+.sticky {
+    @include respond(res1000) {
+        background-color: transparent;
+        border: none;
     }
 }

@@ -11,6 +11,11 @@
         background-repeat: no-repeat;
         background-position: center;
 
+        @include respond(res800) {
+            display: block;
+            // @include clearFix;
+        }
+
         &-title {
             text-align: center;
             margin-left: 10rem;
@@ -21,6 +26,11 @@
 
             @include respond(res1000) {
                 margin-left: 5rem;
+            }
+
+            @include respond(res800) {
+                padding-top: 12rem;
+                margin-left: 0;
             }
 
             &--name {
@@ -36,12 +46,40 @@
                 @include respond(res1100) {
                     font-size: 3rem;
                 }
+
+                @include respond(res800) {
+                    font-size: 5rem;
+                }
+
+                @include respond(res700) {
+                    font-size: 4rem;
+                }
+
+                @include respond(res600) {
+                    font-size: 3rem;
+                }
+
+                @include respond(res500) {
+                    font-size: 2.5rem;
+                }
             }
             
             &--position {
                 display: block;
                 text-transform: uppercase;
                 font-size: 3rem;
+
+                @include respond(res800) {
+                    font-size: 4rem;
+                }
+
+                @include respond(res700) {
+                    font-size: 3rem;
+                }
+
+                @include respond(res600) {
+                    font-size: 2.5rem;
+                }
             }
         }
     }
@@ -58,6 +96,14 @@
             right: 5rem;
         }
 
+        @include respond(res800) {
+            position: relative;
+            width: 30rem;
+            margin: 0 auto;
+            margin-bottom: 10rem;
+            right: 0;
+        }
+
         &--photo {
             height: 100%;
         }
@@ -72,13 +118,49 @@
             width: 100%;
         }
 
+        @include respond(res800) {
+            padding: 2rem;
+        }
+
         & > h2 {
             text-align: center;
             margin-bottom: 5rem;
+
+            @include respond(res800) {
+                margin-bottom: 2rem;
+            }
         }
 
         & > p {
             text-indent: 10rem;
+
+            @include respond(res700) {
+                height: 10rem;
+                overflow: hidden;
+            }
+        }& > button {
+            opacity: 0;
+            visibility: 0;
+            margin-top: 2rem;
+            border: none;
+            padding: 5px;
+            color: var(--color-primary);
+
+            &:hover {
+                color: white;
+                background-color: var(--color-primary);
+            }
+
+            @include respond(res700) {
+                opacity: 1;
+                visibility: visible;
+            }
         }
+
+
     }
+}
+
+.collapse-height {
+    height: 100% !important;
 }

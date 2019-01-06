@@ -7,6 +7,14 @@
     box-shadow: var(--shadow-dark);
     position: relative;
     margin-bottom: 3rem;
+
+    @include respond(res500) {
+        padding: 2rem;
+    }
+
+    @include respond(res400) {
+        margin: 1rem;
+    }
     
     &__embeded {
         width: 100%;
@@ -14,7 +22,9 @@
     }
     
     & h2 {
-        
+        @include respond(res500) {
+            font-size: 2rem;
+        }
     }
     
     & > span.sub-value {
@@ -29,6 +39,14 @@
     
     & img {
         width: 40rem;
+
+        @include respond(res500) {
+            width: 34rem;
+        }
+
+        @include respond(res400) {
+            width: 32rem;
+        }
     }
 
     & > a {

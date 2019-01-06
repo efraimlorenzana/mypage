@@ -6,29 +6,78 @@
     
     display: flex;
     align-items: flex-end;
+
+    @include respond(res800) {
+        display: block;  
+    }
+
+    @include respond(res600) {
+        padding: 4rem;
+    }
     
     & > .social {
         position: absolute;
         top: -3.5rem;
         right: 3rem;
+
+        @include respond(res800) {
+            position: static;
+            text-align: center;
+        }
         
         ul {
             li {
                 list-style: none;
                 display: inline-block;
                 margin-right: 2rem;
+
+                @include respond(res600) {
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
                 
                 // background-color: var(--color-primary);
                 background-image: linear-gradient(var(--color-grey-dark-1), var(--color-primary));
                 padding: 2rem;
                 border-radius: 50%;
                 border: 2px solid var(--color-grey-dark-1);
+
+                @include respond(res800) {
+                    background-image: none;
+                    background-color: var(--color-primary);
+                }
+
+                @include respond(res600) {
+                    background-color: transparent;
+                    padding: 0;
+                }
                 
                 a {
                     svg {
                         width: 4rem;
                         height: 4rem;
                         // stroke: var(--color-grey-dark-1);
+
+                        @include respond(res700) {
+                            width: 3rem;
+                            height: 3rem;
+                        }
+
+                        @include respond(res600) {
+                            width: 6rem;
+                            height: 6rem;
+                        }
+
+                        @include respond(res500) {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+
+                        @include respond(res400) {
+                            width: 3rem;
+                            height: 3rem;
+                        }
                     }
                 }
             }
@@ -43,12 +92,16 @@
         &--contact {
             display: flex;
 
+            @include respond(res1000) {
+                display: block;
+            }
+
             & .col1 {
                 // width: 100%;
                 padding: 0 3rem;
 
-                @include respond(res1100) {
-                    
+                @include respond(res500) {
+                    padding: 0;
                 }
 
                 & > h2 {
@@ -58,10 +111,18 @@
                 & > ul {
                     margin-left: 3rem;
 
+                    @include respond(res1000) {
+                        margin-left: 0;
+                    }
+
                     li {
                         list-style: none;
                         display: flex;
                         align-items: center;
+
+                        @include respond(res1000) {
+                            display: inline-block;
+                        }
 
                         &:not(:last-child) {
                             margin-bottom: 1rem;
@@ -78,6 +139,15 @@
                             font-weight: 700;
                             display: inline-block;
                             letter-spacing: 2px;
+
+                            @include respond(res1000) {
+                                text-align: center;
+                            }
+
+                            @include respond(res500) {
+                                font-weight: 400;
+                                letter-spacing: 0;
+                            }
                         }
                     }
                 }
@@ -98,12 +168,31 @@
 
                     height: 100%;
 
-                    
+                    @include respond(res1000) {
+                        padding: 3rem;
+                    }
+
+                    @include respond(res500) {
+                        justify-content: space-around;
+                    }
 
                     span {
                         text-align: center;
+
+                        @include respond(res500) {
+                            text-align: left;
+                        }
+
                         & > div {
                             font-size: 1rem;
+
+                            @include respond(res700) {
+                                font-size: .8rem;
+                            }
+
+                            @include respond(res600) {
+                               display: none;
+                            }
                         }
 
                         & > svg {
@@ -118,6 +207,42 @@
                             @include respond(res1100) {
                                 width: 6rem;
                                 height: 6rem;
+                            }
+
+                            @include respond(res1000) {
+                                width: 8rem;
+                                height: 8rem;
+                                margin: 1rem;
+                            }
+
+                            @include respond(res800) {
+                                width: 5rem;
+                                height: 5rem;
+                                margin: 1rem;
+                            }
+
+                            @include respond(res700) {
+                                width: 4rem;
+                                height: 4rem;
+                                margin: 1rem;
+                            }
+
+                            @include respond(res600) {
+                                width: 6rem;
+                                height: 6rem;
+                                margin: 1rem;
+                            }
+
+                            @include respond(res500) {
+                                width: 4rem;
+                                height: 4rem;
+                                margin: 1rem;
+                            }
+
+                            @include respond(res400) {
+                                width: 3rem;
+                                height: 3rem;
+                                margin: 1rem;
                             }
                         }
                     }
@@ -143,6 +268,10 @@
                     list-style: none;
                     display: inline-block;
                     margin-right: 1rem;  
+
+                    @include respond(res700) {
+                        display: none;
+                    }
                     
                     & > a {
                         text-decoration: none;

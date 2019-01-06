@@ -36,7 +36,7 @@ const Navigation = () => {
                     </a>
                 </li>
                 <li className="navigation__item">
-                    <a href="#footer" className="navigation__link">Contact</a>
+                    <a href="#contact" className="navigation__link">Contact</a>
                 </li>
             </ul>
         </nav>

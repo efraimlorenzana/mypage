@@ -149,7 +149,7 @@ class Footer extends Component {
                         </div>
 
                         <div className="col1">
-                            <h2>Contact</h2>
+                            <h2 id="contact">Contact</h2>
                             <ul>
                                 <li>
                                     <svg>

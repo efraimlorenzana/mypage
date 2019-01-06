@@ -6,6 +6,10 @@
     border: 1px solid var(--color-primary);
     box-shadow: var(--shadow-dark);
 
+    @include respond(res600) {
+        margin: 1rem;
+    }
+
     &__image {
         width: 100%;
 
