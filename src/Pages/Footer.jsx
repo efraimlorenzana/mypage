@@ -190,7 +190,7 @@ class Footer extends Component {
                                 <a href="#achievement">Achievement</a> |
                             </li>
                             <li>
-                                <a href="https://drive.google.com/file/d/1N5kWWseeZeY5HTq-rqxDyzFnHfCEoiY0/view" 
+                                <a href="https://docs.google.com/document/d/1vKiiNvR-zK9fsNcrNvHZ7Y0DgPt22-Szs6noFvhx420/edit?usp=sharing" 
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >

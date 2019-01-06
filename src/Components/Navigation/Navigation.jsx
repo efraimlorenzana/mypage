@@ -27,7 +27,7 @@ const Navigation = () => {
                     <a href="#achievement" className="navigation__link">Achievement</a>
                 </li>
                 <li className="navigation__item">
-                    <a href="https://drive.google.com/file/d/1N5kWWseeZeY5HTq-rqxDyzFnHfCEoiY0/view" 
+                    <a href="https://docs.google.com/document/d/1vKiiNvR-zK9fsNcrNvHZ7Y0DgPt22-Szs6noFvhx420/edit?usp=sharing" 
                     className="navigation__link"
                     target="_blank"
                     rel="noopener noreferrer"
