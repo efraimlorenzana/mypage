@@ -175,7 +175,7 @@ class Footer extends Component {
 
                     <hr/>
 
-                    <div>
+                    <div className="footer">
                         <ul className="footer__nav">
                             <li>
                                 <a href="#main">Home</a> |

@@ -519,28 +519,28 @@ hr {
                   width: 3rem;
                   height: 3rem;
                   margin: 1rem; } }
-    .Footer__text div {
+    .Footer__text > div.footer {
       text-align: center;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 3px; }
-      .Footer__text div > ul {
+      .Footer__text > div.footer > ul {
         display: inline-block; }
         @media only screen and (max-width: 68.75em) {
-          .Footer__text div > ul {
+          .Footer__text > div.footer > ul {
             display: block;
             margin-bottom: 2rem; } }
-        .Footer__text div > ul > li {
+        .Footer__text > div.footer > ul > li {
           list-style: none;
           display: inline-block;
           margin-right: 1rem; }
           @media only screen and (max-width: 43.75em) {
-            .Footer__text div > ul > li {
+            .Footer__text > div.footer > ul > li {
               display: none; } }
-          .Footer__text div > ul > li > a {
+          .Footer__text > div.footer > ul > li > a {
             text-decoration: none;
             color: white; }
-            .Footer__text div > ul > li > a:hover {
+            .Footer__text > div.footer > ul > li > a:hover {
               text-decoration: none;
               color: var(--color-primary); }
 
