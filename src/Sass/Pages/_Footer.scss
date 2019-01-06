@@ -94,6 +94,7 @@
 
             @include respond(res1000) {
                 display: block;
+                text-align: center;
             }
 
             & .col1 {
@@ -121,7 +122,7 @@
                         align-items: center;
 
                         @include respond(res1000) {
-                            display: inline-block;
+                            display: block;
                         }
 
                         &:not(:last-child) {

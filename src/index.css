@@ -411,7 +411,8 @@ hr {
       display: flex; }
       @media only screen and (max-width: 62.55em) {
         .Footer__text--contact {
-          display: block; } }
+          display: block;
+          text-align: center; } }
       .Footer__text--contact .col1 {
         padding: 0 3rem; }
         @media only screen and (max-width: 31.25em) {
@@ -430,7 +431,7 @@ hr {
             align-items: center; }
             @media only screen and (max-width: 62.55em) {
               .Footer__text--contact .col1 > ul li {
-                display: inline-block; } }
+                display: block; } }
             .Footer__text--contact .col1 > ul li:not(:last-child) {
               margin-bottom: 1rem; }
             .Footer__text--contact .col1 > ul li > svg {
