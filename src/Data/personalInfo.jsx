@@ -38,6 +38,10 @@ export const skills = [
     {
         title: "Visual Basic for Application",
         progress: 88
+	},
+	{
+        title: "Unity AR Development",
+        progress: 30
     },
 ];
 
@@ -179,5 +183,85 @@ export const achievement = [
 		date: "May 2018 to November 2018",
 		file: "https://drive.google.com/file/d/1dR5KBpesWHdEWezFC8yQneyCrLFtv20q/view?usp=sharing",
 		img: "cert2.png"
+	}
+];
+
+export const jobExperience = [
+	{
+		company : "RNM Food Corporation - Jollibee Daet Bayan",
+		position : "Service Crew (Fry Man)",
+		department : "Kitchen",
+		duration : "Aug 2010 - Jan 2011",
+		industry : "Food & Beverage / Catering / Restaurant",
+		description : "Cooking Different Types of Classified Foods base on my Designated Station. I cook with Quality, Cleanliness and fast as proper period of time.",
+		color : "tag2",
+		side: "right",
+		logo: "jollibee-logo.png"
+	},
+	{
+		company : "Carpena Christian Group",
+		position : "Software Developer",
+		department : "",
+		duration : "May 2011 - Oct 2011",
+		industry : "Non-Profit Organization / Social Services / NGO",
+		description : "Maintenance of Organization Web Site 'Accesstoeternallife.com', Develop Software (King James Bible - English Tagalog, King James Library and Lesson, Worship Application),Data encoding",
+		color : "tag1",
+		side: "left",
+		logo: "carpena.jpg"
+	},
+	{
+		company : "Megawide Construction Corp.",
+		position : "Warehouseman",
+		department : "Asset Management",
+		duration : "Nov 2011 - Feb 2013",
+		industry : "Construction / Building / Engineering",
+		description : "Received Delivery, Released Materials, Monitoring, Performing Actual Counting, Submit Daily, Weekly and Monthly Report based on actual transactions and manage Warehouse as Organized, Secured and Clean",
+		color : "tag3",
+		side: "right",
+		logo: "megawide.png"
+	},
+	{
+		company : "DDT Konstract Inc.",
+		position : "Field Checker / TK Aide",
+		department : "HR & Admin",
+		duration : "Feb 2013 - May 2015",
+		industry : "Construction / Building / Engineering",
+		description : "(1) Assist & accommodate newly hired employee (2) Prepare Daily, Weekly and Monthly Manpower Report (3) Assist in Encoding and Preparation of Workers Time Logs (4) Monitor / Check Overtime Request of workers and Staff (5) Prepare and Maintain Workers Information / 201 Files (6) Assist Timekeeper for providing Actual and Accurate Workers Payroll Reports (7) Field Checking at Project site",
+		color : "tag4",
+		side: "left",
+		logo: "ddt.jpeg"
+	},
+	{
+		company : "DDT Konstract Inc.",
+		position : "Timekeeper",
+		department : "HR & Admin",
+		duration : "May 2015 - Oct 2016",
+		industry : "Construction / Building / Engineering",
+		description : "Responsible for hiring of direct labor, conduct orientation of new hires, Prepare 201 files of new applicants, Prepare and issues ID’s, to newly hired workers, Prepare employment contracts for Renew / Rehire, Prepare termination and clearance to terminated workers, Draft and finalize memos and notices, Attend staff meetings, updates status of hiring for staff, Arrange schedule of applicant for interview by the project manager, Monitor time and attendance of all project personnel, Maintains a complete and accurate file of project employees, Assist Administrative officer in the preparation of appropriate notices to workers concerning their  employment contracts, Ensures the implementation of the quality plans and objectives of the department and project., Execute downloading and uploading of data from logbox Station to computer hard disk, Printing of daily manpower reports, overtime authorization slip, Prepare timekeeping reports, Process and encode for daily paid employees, Process and encode mid-monthlies payroll, Perform field checking, Oversee and implement standard timekeeping procedures, Prepare timecard validation for daily paid workers, Knowledge and exposure on Company and Government Mandated Benefits e.g. Social Security System, HDMF, Phil Health, Assist Employee for Sickness Notification and Employee Notification reports, Attend to different inquiries of employees on SSS, HDMF, Philhealth",
+		color : "tag4",
+		side: "right",
+		logo: "ddt.jpeg"
+	},
+	{
+		company : "DDT Konstract Inc.",
+		position : "HR Staff",
+		department : "HR & Admin",
+		duration : "Oct 2016 - Nov 2018",
+		industry : "Construction / Building / Engineering",
+		description : "Prepare / Process Lastpay Computation for Separated Employee's Process Payroll Computation, Prepare Timekeeping, In charge for Employees BIR Registration and Information Updates",
+		color : "tag4",
+		side: "left",
+		logo: "ddt.jpeg"
+	},
+	{
+		company : "DDT Konstract Inc.",
+		position : "Web Developer",
+		department : "IT",
+		duration : "Nov 2018",
+		industry : "Construction / Building / Engineering",
+		description : "Create Website / Web Application base on company Requirement. my current project is 201 File Management System",
+		color : "tag4",
+		side: "right",
+		logo: "ddt.jpeg"
 	}
 ];

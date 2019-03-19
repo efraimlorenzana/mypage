@@ -7,7 +7,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-particles-js": "^2.4.2",
-    "react-scripts": "2.1.1"
+    "react-scripts": "^2.1.5"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass src/Sass/style.scss src/index.css -w"
+    "watch:sass": "node-sass src/Sass/style.scss src/index.css -w",
+    "runall": "npm-run-all --parallel compiled:react watch:sass"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,6 +30,7 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
   }
 }
