@@ -28,6 +28,14 @@ $content5:#975fb4;
         @include respond(res900) {
             margin-left: 22%;
         }
+
+        @include respond(res500) {
+          margin-left: 30%;
+        }
+
+        @include respond(res400) {
+          margin-left: 44%;
+        }
         
         &::after {
           border-top: 20px solid transparent;
@@ -36,8 +44,20 @@ $content5:#975fb4;
           position: absolute;
           right: 44%;
 
+          @include respond(res1500) {
+            right: 45%;
+          }
+
           @include respond(res900) {
             left: 8%;
+          }
+
+          @include respond(res500) {
+            left: 10%;
+          }
+
+          @include respond(res400) {
+            left: 15%;
           }
         }
  /// Region 1     
@@ -98,9 +118,25 @@ $content5:#975fb4;
           right: 54%;
 
           @include respond(res900) {
-              left: -36%;
+            left: -36%;
           }
-        }
+
+          @include respond(res700) {
+            left: -33%;
+          }
+
+          @include respond(res600) {
+            left: -33%;
+          }
+
+          @include respond(res500) {
+            left: -27%;
+          }
+
+          @include respond(res400) {
+            left: -25%;
+          }
+        } 
       }
       
       & > .content {
@@ -121,6 +157,14 @@ $content5:#975fb4;
             margin-left: 10%;
         }
 
+        @include respond(res500) {
+          margin-left: 14%;
+        }
+
+        @include respond(res400) {
+          margin-left: 20%;
+        }
+
       & > .tag {
         order: 2;
 
@@ -133,13 +177,33 @@ $content5:#975fb4;
           border-right: 20px solid transparent;
           border-bottom: 20px solid transparent;
           position: absolute;
-          left: 44%;
+          left: 42%;
+
+          @include respond(res1500) {
+            left: 42.5%;
+          }
+
+          @include respond(res1400) {
+            left: 45%;
+          }
+
+          @include respond(res1300) {
+            left: 45%;
+          }
 
           @include respond(res900) {
             border-top: 20px solid transparent;
             border-left: 20px solid transparent;
             border-bottom: 20px solid transparent;
             left: 8%;
+          }
+
+          @include respond(res500) {
+            left: 10%;
+          }
+
+          @include respond(res400) {
+            left: 15%;
           }
         }
 ///Region 2        
@@ -224,16 +288,16 @@ $content5:#975fb4;
           left: 54%;
 
           @include respond(res900) {
-              left: 2%;
+              left: 15px;
           }
 
-          @include respond(res700) {
-            left: 1%;
-          }
+          // @include respond(res700) {
+          //   left: 35px;
+          // }
 
-          @include respond(res600) {
-            left: 0;
-          }
+          // @include respond(res600) {
+          //   left: 0;
+          // }
         }
       }
       
@@ -270,6 +334,11 @@ $content5:#975fb4;
     transform: translate(-50%, 0);
     border-radius: 50%;
     border: 10px solid gray;
+
+    @include respond(res900) {
+      left: 1%;
+      transform: translate(0, 0);
+    }
   }
   
   &::before {
@@ -284,7 +353,7 @@ $content5:#975fb4;
     background-color: gray;
 
     @include respond(res900) {
-        left: 5%;
+        left: 40px;
     }
   }
   
@@ -297,6 +366,34 @@ $content5:#975fb4;
   &__title {
     width: 40%;
     display: inline-block;
+
+    @include respond(res900) {
+      width: 100%;
+      padding: 80px;
+    }
+
+    @include respond(res900) {
+      padding: 50px;
+    }
+
+    @include respond(res500) {
+      padding-left: 50px;
+    }
+
+    & > h1 {
+      @include respond(res900) {
+        text-align: center;
+      }
+    }
+
+    & > p {
+      text-indent: 50px;
+
+      @include respond(res900) {
+        text-align: justify;
+        text-indent: 0;
+      }
+    }
   }
   
   &__data {
@@ -316,23 +413,27 @@ $content5:#975fb4;
       text-align: center;
 
       @include respond(res900) {
-          min-width: 300px;
+          min-width: 400px;
       }
 
       @include respond(res800) {
-        min-width: 280px;
+        min-width: 350px;
       }
 
       @include respond(res700) {
-        min-width: 200px;
+        min-width: 250px;
       }
 
       @include respond(res600) {
-        min-width: 150px;
+        min-width: 230px;
       }
 
       @include respond(res500) {
         min-width: 100px;
+      }
+
+      @include respond(res400) {
+        min-width: 80px;
       }
       
       &::before {
@@ -350,6 +451,14 @@ $content5:#975fb4;
 
         @include respond(res900) {
             left: 5%;
+        }
+
+        @include respond(res500) {
+          left: 8%;
+        }
+
+        @include respond(res400) {
+          left: 10%;
         }
       }
       
@@ -440,7 +549,7 @@ $content5:#975fb4;
       }
 
       @include respond(res800) {
-        min-width: 320px;
+        min-width: 310px;
       }
 
       @include respond(res700) {
@@ -453,6 +562,11 @@ $content5:#975fb4;
 
       @include respond(res500) {
         min-width: 230px;
+      }
+
+      @include respond(res400) {
+        min-width: 150px;
+        font-size: 10px;
       }
       
       & > h4 {

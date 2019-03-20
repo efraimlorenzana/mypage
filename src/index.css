@@ -138,15 +138,30 @@ hr {
   @media only screen and (max-width: 56.25em) {
     .right > .em-timeline__data > .tag {
       margin-left: 22%; } }
+  @media only screen and (max-width: 31.25em) {
+    .right > .em-timeline__data > .tag {
+      margin-left: 30%; } }
+  @media only screen and (max-width: 25em) {
+    .right > .em-timeline__data > .tag {
+      margin-left: 44%; } }
   .right > .em-timeline__data > .tag::after {
     border-top: 20px solid transparent;
     border-left: 20px solid transparent;
     border-bottom: 20px solid transparent;
     position: absolute;
     right: 44%; }
+    @media only screen and (max-width: 93.75em) {
+      .right > .em-timeline__data > .tag::after {
+        right: 45%; } }
     @media only screen and (max-width: 56.25em) {
       .right > .em-timeline__data > .tag::after {
         left: 8%; } }
+    @media only screen and (max-width: 31.25em) {
+      .right > .em-timeline__data > .tag::after {
+        left: 10%; } }
+    @media only screen and (max-width: 25em) {
+      .right > .em-timeline__data > .tag::after {
+        left: 15%; } }
   .right > .em-timeline__data > .tag1::after {
     border-right: 20px solid #00a5ff; }
   .right > .em-timeline__data > .tag1 > .icon {
@@ -173,6 +188,18 @@ hr {
     @media only screen and (max-width: 56.25em) {
       .right > .em-timeline__data > .tag > .icon {
         left: -36%; } }
+    @media only screen and (max-width: 43.75em) {
+      .right > .em-timeline__data > .tag > .icon {
+        left: -33%; } }
+    @media only screen and (max-width: 37.5em) {
+      .right > .em-timeline__data > .tag > .icon {
+        left: -33%; } }
+    @media only screen and (max-width: 31.25em) {
+      .right > .em-timeline__data > .tag > .icon {
+        left: -27%; } }
+    @media only screen and (max-width: 25em) {
+      .right > .em-timeline__data > .tag > .icon {
+        left: -25%; } }
   .right > .em-timeline__data > .content {
     text-align: left; }
 
@@ -182,6 +209,12 @@ hr {
   @media only screen and (max-width: 56.25em) {
     .left > .em-timeline__data {
       margin-left: 10%; } }
+  @media only screen and (max-width: 31.25em) {
+    .left > .em-timeline__data {
+      margin-left: 14%; } }
+  @media only screen and (max-width: 25em) {
+    .left > .em-timeline__data {
+      margin-left: 20%; } }
   .left > .em-timeline__data > .tag {
     order: 2; }
     @media only screen and (max-width: 56.25em) {
@@ -192,13 +225,28 @@ hr {
       border-right: 20px solid transparent;
       border-bottom: 20px solid transparent;
       position: absolute;
-      left: 44%; }
+      left: 42%; }
+      @media only screen and (max-width: 93.75em) {
+        .left > .em-timeline__data > .tag::after {
+          left: 42.5%; } }
+      @media only screen and (max-width: 87.5em) {
+        .left > .em-timeline__data > .tag::after {
+          left: 45%; } }
+      @media only screen and (max-width: 81.25em) {
+        .left > .em-timeline__data > .tag::after {
+          left: 45%; } }
       @media only screen and (max-width: 56.25em) {
         .left > .em-timeline__data > .tag::after {
           border-top: 20px solid transparent;
           border-left: 20px solid transparent;
           border-bottom: 20px solid transparent;
           left: 8%; } }
+      @media only screen and (max-width: 31.25em) {
+        .left > .em-timeline__data > .tag::after {
+          left: 10%; } }
+      @media only screen and (max-width: 25em) {
+        .left > .em-timeline__data > .tag::after {
+          left: 15%; } }
     .left > .em-timeline__data > .tag1::after {
       border-left: 20px solid #00a5ff; }
       @media only screen and (max-width: 56.25em) {
@@ -244,13 +292,7 @@ hr {
       left: 54%; }
       @media only screen and (max-width: 56.25em) {
         .left > .em-timeline__data > .tag > .icon {
-          left: 2%; } }
-      @media only screen and (max-width: 43.75em) {
-        .left > .em-timeline__data > .tag > .icon {
-          left: 1%; } }
-      @media only screen and (max-width: 37.5em) {
-        .left > .em-timeline__data > .tag > .icon {
-          left: 0; } }
+          left: 15px; } }
   .left > .em-timeline__data > .content {
     text-align: right; }
     @media only screen and (max-width: 56.25em) {
@@ -278,6 +320,10 @@ hr {
     transform: translate(-50%, 0);
     border-radius: 50%;
     border: 10px solid gray; }
+    @media only screen and (max-width: 56.25em) {
+      .em-timeline::after {
+        left: 1%;
+        transform: translate(0, 0); } }
   .em-timeline::before {
     content: '';
     display: inline-block;
@@ -290,12 +336,31 @@ hr {
     background-color: gray; }
     @media only screen and (max-width: 56.25em) {
       .em-timeline::before {
-        left: 5%; } }
+        left: 40px; } }
   .em-timeline__row:not(:last-child) {
     margin-bottom: 50px; }
   .em-timeline__title {
     width: 40%;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .em-timeline__title {
+        width: 100%;
+        padding: 80px; } }
+    @media only screen and (max-width: 56.25em) {
+      .em-timeline__title {
+        padding: 50px; } }
+    @media only screen and (max-width: 31.25em) {
+      .em-timeline__title {
+        padding-left: 50px; } }
+    @media only screen and (max-width: 56.25em) {
+      .em-timeline__title > h1 {
+        text-align: center; } }
+    .em-timeline__title > p {
+      text-indent: 50px; }
+      @media only screen and (max-width: 56.25em) {
+        .em-timeline__title > p {
+          text-align: justify;
+          text-indent: 0; } }
   .em-timeline__data {
     display: flex;
     align-items: stretch;
@@ -312,19 +377,22 @@ hr {
       text-align: center; }
       @media only screen and (max-width: 56.25em) {
         .em-timeline__data > .tag {
-          min-width: 300px; } }
+          min-width: 400px; } }
       @media only screen and (max-width: 50em) {
         .em-timeline__data > .tag {
-          min-width: 280px; } }
+          min-width: 350px; } }
       @media only screen and (max-width: 43.75em) {
         .em-timeline__data > .tag {
-          min-width: 200px; } }
+          min-width: 250px; } }
       @media only screen and (max-width: 37.5em) {
         .em-timeline__data > .tag {
-          min-width: 150px; } }
+          min-width: 230px; } }
       @media only screen and (max-width: 31.25em) {
         .em-timeline__data > .tag {
           min-width: 100px; } }
+      @media only screen and (max-width: 25em) {
+        .em-timeline__data > .tag {
+          min-width: 80px; } }
       .em-timeline__data > .tag::before {
         content: '';
         display: block;
@@ -339,6 +407,12 @@ hr {
         @media only screen and (max-width: 56.25em) {
           .em-timeline__data > .tag::before {
             left: 5%; } }
+        @media only screen and (max-width: 31.25em) {
+          .em-timeline__data > .tag::before {
+            left: 8%; } }
+        @media only screen and (max-width: 25em) {
+          .em-timeline__data > .tag::before {
+            left: 10%; } }
       .em-timeline__data > .tag::after {
         content: '';
         display: block;
@@ -393,7 +467,7 @@ hr {
           min-width: 400px; } }
       @media only screen and (max-width: 50em) {
         .em-timeline__data > .content {
-          min-width: 320px; } }
+          min-width: 310px; } }
       @media only screen and (max-width: 43.75em) {
         .em-timeline__data > .content {
           min-width: 300px; } }
@@ -403,6 +477,10 @@ hr {
       @media only screen and (max-width: 31.25em) {
         .em-timeline__data > .content {
           min-width: 230px; } }
+      @media only screen and (max-width: 25em) {
+        .em-timeline__data > .content {
+          min-width: 150px;
+          font-size: 10px; } }
       .em-timeline__data > .content > h4 {
         margin: 0;
         text-transform: uppercase;

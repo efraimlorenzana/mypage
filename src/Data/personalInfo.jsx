@@ -205,7 +205,7 @@ export const jobExperience = [
 		duration : "May 2011 - Oct 2011",
 		industry : "Non-Profit Organization / Social Services / NGO",
 		description : "Maintenance of Organization Web Site 'Accesstoeternallife.com', Develop Software (King James Bible - English Tagalog, King James Library and Lesson, Worship Application),Data encoding",
-		color : "tag1",
+		color : "tag5",
 		side: "left",
 		logo: "carpena.jpg"
 	},
