@@ -36,7 +36,7 @@ class Experience extends Component {
                             My Work Experience
                         </h1>
                         <p>
-                            These timeline shows my professional work experience. it also illustrate that i have been working for almost 9 years as an employee.
+                            These timeline shows my professional work experience. it also illustrate my lenght of service as an employee from different company.
                         </p>
                     </div>
 
