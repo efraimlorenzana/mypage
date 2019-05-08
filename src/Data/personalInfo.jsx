@@ -257,11 +257,22 @@ export const jobExperience = [
 		company : "DDT Konstract Inc.",
 		position : "Web Developer",
 		department : "IT",
-		duration : "Nov 2018",
+		duration : "Nov 2018 - April 30, 2019",
 		industry : "Construction / Building / Engineering",
 		description : "Create Website / Web Application base on company Requirement. my current project is 201 File Management System",
 		color : "tag4",
 		side: "right",
 		logo: "ddt.jpeg"
+	},
+	{
+		company : "Accenture",
+		position : "Software Engineer",
+		department : "Avanade",
+		duration : "May 3, 2019",
+		industry : "Technology",
+		description : "Design, build and configure applications to meet business process and application requirements.",
+		color : "tag5",
+		side: "left",
+		logo: "acn.jpeg"
 	}
 ];
