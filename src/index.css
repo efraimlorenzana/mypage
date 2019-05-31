@@ -34,7 +34,7 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light), var(--color-primary-dark));
@@ -47,7 +47,7 @@ body {
       padding: 0; } }
 
 .code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 .main__bg {
   position: fixed;
@@ -162,6 +162,9 @@ hr {
     @media only screen and (max-width: 25em) {
       .right > .em-timeline__data > .tag::after {
         left: 15%; } }
+    @media only screen and (min-width: 93.8125em) {
+      .right > .em-timeline__data > .tag::after {
+        right: 45%; } }
   .right > .em-timeline__data > .tag1::after {
     border-right: 20px solid #00a5ff; }
   .right > .em-timeline__data > .tag1 > .icon {
@@ -247,6 +250,9 @@ hr {
       @media only screen and (max-width: 25em) {
         .left > .em-timeline__data > .tag::after {
           left: 15%; } }
+      @media only screen and (min-width: 87.5625em) {
+        .left > .em-timeline__data > .tag::after {
+          left: 45%; } }
     .left > .em-timeline__data > .tag1::after {
       border-left: 20px solid #00a5ff; }
       @media only screen and (max-width: 56.25em) {
@@ -393,6 +399,12 @@ hr {
       @media only screen and (max-width: 25em) {
         .em-timeline__data > .tag {
           min-width: 80px; } }
+      @media only screen and (min-width: 101.3125em) {
+        .em-timeline__data > .tag {
+          min-width: 210px; } }
+      @media only screen and (min-width: 120em) {
+        .em-timeline__data > .tag {
+          min-width: 291px; } }
       .em-timeline__data > .tag::before {
         content: '';
         display: block;
@@ -461,7 +473,7 @@ hr {
       min-width: 330px; }
       @media only screen and (max-width: 75em) {
         .em-timeline__data > .content {
-          min-width: 200px; } }
+          min-width: 300px; } }
       @media only screen and (max-width: 56.25em) {
         .em-timeline__data > .content {
           min-width: 400px; } }
@@ -481,6 +493,21 @@ hr {
         .em-timeline__data > .content {
           min-width: 150px;
           font-size: 10px; } }
+      @media only screen and (min-width: 85em) {
+        .em-timeline__data > .content {
+          min-width: 350px; } }
+      @media only screen and (min-width: 87.8125em) {
+        .em-timeline__data > .content {
+          min-width: 408px; } }
+      @media only screen and (min-width: 95.75em) {
+        .em-timeline__data > .content {
+          min-width: 450px; } }
+      @media only screen and (min-width: 102.0625em) {
+        .em-timeline__data > .content {
+          min-width: 456px; } }
+      @media only screen and (min-width: 120em) {
+        .em-timeline__data > .content {
+          min-width: 500px; } }
       .em-timeline__data > .content > h4 {
         margin: 0;
         text-transform: uppercase;

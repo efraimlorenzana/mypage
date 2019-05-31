@@ -266,9 +266,9 @@ export const jobExperience = [
 	},
 	{
 		company : "Accenture",
-		position : "Application Development Analyst",
+		position : "App Development Analyst",
 		department : "Software Engineering Segment",
-		duration : "May 3, 2019",
+		duration : "May 3, 2019 - Present",
 		industry : "Technology",
 		description : "Design, build and configure applications to meet business process and application requirements.",
 		color : "tag5",

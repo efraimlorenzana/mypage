@@ -59,6 +59,10 @@ $content5:#975fb4;
           @include respond(res400) {
             left: 15%;
           }
+
+          @include minScreen(1501) {
+            right: 45%;
+          }
         }
  /// Region 1     
         &1 {
@@ -204,6 +208,10 @@ $content5:#975fb4;
 
           @include respond(res400) {
             left: 15%;
+          }
+
+          @include minScreen(1401) {
+            left: 45%;
           }
         }
 ///Region 2        
@@ -412,6 +420,10 @@ $content5:#975fb4;
       font-size: 12px;
       text-align: center;
 
+      // @include maxScreen(1360) {
+      //     min-width: 280px;
+      // }
+
       @include respond(res900) {
           min-width: 400px;
       }
@@ -434,6 +446,14 @@ $content5:#975fb4;
 
       @include respond(res400) {
         min-width: 80px;
+      }
+
+      @include minScreen(1621) {
+        min-width: 210px;
+      }
+
+      @include minScreen(1920) {
+        min-width: 291px;
       }
       
       &::before {
@@ -540,8 +560,8 @@ $content5:#975fb4;
       padding: 10px;
       min-width: 330px;
 
-      @include respond(res1200) {
-          min-width: 200px;
+      @include maxScreen(1200) {
+          min-width: 300px;
       }
 
       @include respond(res900) {
@@ -567,6 +587,26 @@ $content5:#975fb4;
       @include respond(res400) {
         min-width: 150px;
         font-size: 10px;
+      }
+
+      @include minScreen(1360) {
+        min-width: 350px;
+      }
+
+      @include minScreen(1405) {
+        min-width: 408px;
+      }
+
+      @include minScreen(1532) {
+        min-width: 450px;
+      }
+
+      @include minScreen(1633) {
+        min-width: 456px;
+      }
+
+      @include minScreen(1920) {
+        min-width: 500px;
       }
       
       & > h4 {
