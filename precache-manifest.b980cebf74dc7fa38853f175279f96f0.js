@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/mypage/static/media/hr-fms.bdcc8b1d.jpg"
   },
   {
-    "revision": "5f60c36c6f7367cc43e3",
-    "url": "/mypage/static/css/main.ca7b53fb.chunk.css"
+    "revision": "d7f68519d6a38eaa9534",
+    "url": "/mypage/static/css/main.d23492e4.chunk.css"
   },
   {
     "revision": "b2e899f0b8c2b7028e9f",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/mypage/static/media/gradient.7cbdaf68.png"
   },
   {
-    "revision": "5f60c36c6f7367cc43e3",
-    "url": "/mypage/static/js/main.5f60c36c.chunk.js"
+    "revision": "d7f68519d6a38eaa9534",
+    "url": "/mypage/static/js/main.d7f68519.chunk.js"
   },
   {
     "revision": "3f0380724ac54def39b529a9a8f6c74d",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/mypage/static/media/megawide.cd44846c.png"
   },
   {
-    "revision": "0a735faab21d1f231aa40027245f14aa",
+    "revision": "de0eee6f320661b8d30f5081c12a0e86",
     "url": "/mypage/index.html"
   }
 ];
