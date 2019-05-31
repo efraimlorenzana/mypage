@@ -507,7 +507,7 @@ hr {
           min-width: 456px; } }
       @media only screen and (min-width: 120em) {
         .em-timeline__data > .content {
-          min-width: 500px; } }
+          min-width: 492px; } }
       .em-timeline__data > .content > h4 {
         margin: 0;
         text-transform: uppercase;
