@@ -266,13 +266,13 @@ export const jobExperience = [
 	},
 	{
 		company : "Accenture",
-		position : "Software Engineer",
-		department : "Avanade",
+		position : "Application Development Analyst",
+		department : "Software Engineering Segment",
 		duration : "May 3, 2019",
 		industry : "Technology",
 		description : "Design, build and configure applications to meet business process and application requirements.",
 		color : "tag5",
 		side: "left",
-		logo: "acn.jpeg"
+		logo: "acn.jpg"
 	}
 ];
