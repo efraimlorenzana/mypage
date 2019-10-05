@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { bio } from '../Data/personalInfo';
-import Me from '../Data/Images/me.jpg';
+
 
 class Main extends Component {
 
@@ -29,21 +28,28 @@ class Main extends Component {
     }
 
     render() {
+        const { 
+            lastname, firstname, middlename,
+            professionTitle, avatar, bio
+        } = this.props.PersonalInfo;
+
+        let fullname = `${firstname} ${middlename} ${lastname}`;
+        
         const elements = (
             <section id="main" className="main">
                 <div className="main__heading">
                     <h1 className="main__heading-title">
                         Hi! Im
                         <span className="main__heading-title--name">
-                            Efraim A. Lorenzana
+                            {fullname}
                         </span>
                         <span className="main__heading-title--position">
-                            Web Developer
+                            {professionTitle}
                         </span>
                     </h1>
 
                     <div className="main__picture">
-                        <img src={Me} 
+                        <img src={`https://media.graphcms.com/${avatar.handle}`} 
                         alt="Cover" 
                         className="main__picture--photo"
                         />
@@ -61,7 +67,7 @@ class Main extends Component {
                 </div>
             </section>
         );
-
+        
         return elements;
     }
 }

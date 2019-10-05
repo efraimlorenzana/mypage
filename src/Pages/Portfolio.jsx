@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-import { projects } from '../Data/personalInfo';
 import Project from '../Components/Project/Project';
 
 class Portfolio extends Component {
-    constructor() {
-        super();
-        this.state = {
-            projects: projects
-        }
-    }
     render () {
         const elements = (
             <section id="portfolio" className="Portfolio">
@@ -16,7 +9,9 @@ class Portfolio extends Component {
 
                 <div className="Portfolio__gallery">
                     {
-                        this.state.projects.map((d, i) => <Project key={i} details={d} />)
+                        this.props.projects.map((d, i) => {
+                            return d.status === 'PUBLISHED' ? <Project key={i} details={d} /> : null
+                        })
                     }
                 </div>
             </section>

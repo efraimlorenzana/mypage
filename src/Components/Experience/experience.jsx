@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
-import { jobExperience } from '../../Data/personalInfo';
 
 class Experience extends Component {
-    constructor() {
-        super();
-
-        this.state = {}
+    toLowerCase = (text) => {
+        return text.toLowerCase();
     }
+
+    GetMonthYear = (date) => {
+        var d = new Date(date);
+        var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        return `${months[d.getMonth()].substring(0,3)} ${d.getFullYear()}`;
+    }
+
     render() {
         const JobExp = ({detail}) => (
-            <div className={`em-timeline__row ${detail.side}`}>
+            <div className={`em-timeline__row ${this.toLowerCase(detail.cardPosition)}`}>
                 <div className="em-timeline__data">
-                <div className={`tag ${detail.color}`}>
+                <div className={`tag ${this.toLowerCase(detail.brandColorTag)}`}>
                     <div className="icon">
-                        <img src={ require(`../../Data/Images/jobexperience/${detail.logo}`) } alt={detail.company}/>
+                        <img src={`https://media.graphcms.com/${detail.logo.handle}` } alt={detail.company}/>
                     </div>
-                        <h4>{detail.duration}</h4>
+                        <h4>{`${this.GetMonthYear(detail.durationFrom)} - ${this.GetMonthYear(detail.durationTo)}`}</h4>
                     </div>
                     <div className="content">
-                        <h4>{detail.position}</h4>
+                        <h4>{detail.role}</h4>
                         <div>{detail.company}</div>
                         <div>{detail.industry}</div>
                         <div>{detail.department}</div>
@@ -30,8 +35,8 @@ class Experience extends Component {
             <section id="experience" className="experience">
                 <h2>Experience</h2>
 
-                <div data-title="JOB" class="em-timeline">
-                    <div class="em-timeline__title">
+                <div data-title="JOB" className="em-timeline">
+                    <div className="em-timeline__title">
                         <h1>
                             My Work Experience
                         </h1>
@@ -41,7 +46,9 @@ class Experience extends Component {
                     </div>
 
                     {
-                        jobExperience.map((d, i) => <JobExp key={i} detail={d} />)
+                        this.props.workHistories.map((d, i) => {
+                            return d.status === 'PUBLISHED' ? <JobExp key={i} detail={d} /> : null
+                        })
                     }
                 </div>
             </section>

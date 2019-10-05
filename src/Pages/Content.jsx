@@ -6,19 +6,20 @@ import Achievement from './Achievement';
 import Experience from '../Components/Experience/experience';
 import Footer from './Footer';
 
-const Content = () => {
-    const elements = (
+const Content = ({ data }) => {
+
+    const { personalInfoes, skillSets, projects, achievements, workHistories } = data;
+
+    return (
         <div className="content">
-            <Main />
-            <Skills />
-            <Portfolio />
-            <Achievement />
-            <Experience />
+            <Main PersonalInfo={personalInfoes[0]} />
+            <Skills skills={skillSets} />
+            <Portfolio projects={projects} />
+            <Achievement achievements={achievements} />
+            <Experience workHistories={workHistories} />
             <Footer />
         </div>
     );
-
-    return elements;
 }
 
 export default Content;

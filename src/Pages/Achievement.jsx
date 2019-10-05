@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-import { achievement } from '../Data/personalInfo';
 import AchievementFile from '../Components/AchievementFile/AchievementFile';
 
 class Achievement extends Component {
-    constructor() {
-        super();
-        this.state = {
-            achievement: achievement
-        }
-    }
     render () {
         const elements = (
             <section id="achievement" className="Achievement">
@@ -16,7 +9,11 @@ class Achievement extends Component {
 
                 <div className="gallery">
                     {
-                        this.state.achievement.map((d,i) => <AchievementFile key={i} details={d} />)
+                        this.props.achievements.map((d,i) => {
+                            return d.status === 'PUBLISHED' ? 
+                                   <AchievementFile key={i} details={d} /> :
+                                   null
+                        })
                     }
                 </div>
             </section>

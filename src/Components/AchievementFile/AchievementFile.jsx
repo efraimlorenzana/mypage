@@ -13,14 +13,14 @@ const AchievementFile = ({details}) => {
             <span className="sub-value">{details.issuer}</span>
 
             {/* <span className="sub-title">Date :</span> */}
-            <span className="sub-value">{details.date}</span>
+            <span className="sub-value">{details.dateAcquired}</span>
 
             <img 
-            src={ require(`../../Data/Images/certificate/${details.img}`) } 
+            src={`https://media.graphcms.com/${details.certificate.handle}` } 
             alt={details.title}
             />
 
-            <a href={details.file} target="_blank" rel="noopener noreferrer">
+            <a href={details.googleDriveLocation} target="_blank" rel="noopener noreferrer">
                 <svg>
                     <use xlinkHref={`${Sprite}#icon-googledrive`}></use>
                 </svg>

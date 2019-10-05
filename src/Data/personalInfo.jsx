@@ -193,7 +193,7 @@ export const jobExperience = [
 		department : "Kitchen",
 		duration : "Aug 2010 - Jan 2011",
 		industry : "Food & Beverage / Catering / Restaurant",
-		description : "Cooking Different Types of Classified Foods base on my Designated Station. I cook with Quality, Cleanliness and fast as proper period of time.",
+		description : "Cooking different types of classified foods base on my designated station. I cook with quality, cleanliness and with standard operating procedure.",
 		color : "tag2",
 		side: "right",
 		logo: "jollibee-logo.png"

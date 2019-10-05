@@ -17,7 +17,7 @@ class ProgressBar extends Component {
     initializeProgressWidth = () => {
         let progressBar = document.querySelector('.progressBar__progress');
         let wPercentage = progressBar.clientWidth / 100;
-        let progress = this.props.data.progress * wPercentage;
+        let progress = this.props.data.knowledgeLevel * wPercentage;
         this.setState({width: progress});
     }
 
@@ -31,20 +31,21 @@ class ProgressBar extends Component {
     }
 
     render () {
+        const { technology, knowledgeLevel } = this.props.data;
         const style = {
             width: this.state.width
         }
         const elements = (
             <div className="progressBar">
                 <h6 className="progressBar__title">
-                    {this.props.data.title}
+                    {technology}
                 </h6>
                 <div className="progressBar__progress">
                     <div 
                     style={style}
                     className="progressBar__progress-bar"
                     >
-                        {this.props.data.progress} %
+                        {knowledgeLevel} %
                     </div>
                 </div>
             </div>

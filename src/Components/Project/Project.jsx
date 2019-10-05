@@ -9,7 +9,7 @@ const Project = ({details}) => {
     const elements = (
         <div className="project">
             <div className="project__image">
-                <img src={ require(`../../Data/Images/projects/${details.img}`) } alt="website" className="project__image--photo"/>
+                <img src={`https://media.graphcms.com/${details.posterImage.handle}` } alt="website" className="project__image--photo"/>
             </div>
             <div className="project__details">
                 {/* <h6 className="project__title-sub">Website</h6> */}
@@ -17,7 +17,7 @@ const Project = ({details}) => {
                 <h6 className="project__title-sub">Description :</h6>
                 <p className="project__description">{details.description}</p>
                 <h6 className="project__title-sub">Technology :</h6>
-                <p className="project__description">{details.tech}</p>
+                <p className="project__description">{details.technology}</p>
             </div>
             <div className="project__link">
                 
@@ -27,7 +27,7 @@ const Project = ({details}) => {
                     </svg>
                 </a>
 
-                <a  target="_blank" rel="noopener noreferrer" href={`${details.site}`} className="project__site">
+                <a  target="_blank" rel="noopener noreferrer" href={`${details.domainName}`} className="project__site">
                     <svg className="project__icon--site">
                         <use xlinkHref={icon}></use>
                     </svg>
