@@ -9,7 +9,9 @@ class Experience extends Component {
         var d = new Date(date);
         var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-        return `${months[d.getMonth()].substring(0,3)} ${d.getFullYear()}`;
+        var newDate = d.getFullYear() === 1900 ? 'Present' : `${months[d.getMonth()].substring(0,3)} ${d.getFullYear()}`;
+
+        return newDate;
     }
 
     render() {

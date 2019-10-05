@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "http://efraimlorenzana.github.io/mypage",
   "dependencies": {
+    "browserslist": "^4.7.0",
+    "caniuse-lite": "^1.0.30000998",
     "graphql-request": "^1.8.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
