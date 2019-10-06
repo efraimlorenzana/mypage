@@ -30,6 +30,15 @@ projects {
     technology
     domainName
     github
+    githubIcon {
+      id
+    }
+    projectSiteLinkIconAvailable {
+      id
+    }
+    projectSiteLinkIconNotAvailable {
+      id
+    }
 }`;
 
 let achievements = `
@@ -63,12 +72,67 @@ achievements {
     jobDescription
   }`;
 
+  let SVGIcons = `
+  svgIcons {
+    status
+    id
+    title
+    viewBox
+    path
+    iconClass
+    fill
+  }`;
+
+  let SocialAccounts = `
+  socialAccounts {
+    status
+    id
+    organization
+    link
+    svgIcon {
+      id
+    }
+  }`;
+
+  let techs = `
+  technologies{
+    status
+    id
+    languageName
+    svgIcon {
+      id
+    }
+    icon {
+      id
+      handle
+    }
+  }`;
+
+  let contacts = `
+  contactDetailses {
+    status
+    id
+    title
+    type
+    info
+    svgIcon {
+      id
+    }
+    mediaIcon {
+      handle
+    }
+  }`;
+
 const GRAPHQL_QUERY_ALL = `{
     ${personalInfo},
     ${skills},
     ${projects},
     ${achievements},
-    ${workHistories}
+    ${workHistories},
+    ${SVGIcons},
+    ${SocialAccounts},
+    ${techs},
+    ${contacts}
 }`;
 
 module.exports = {

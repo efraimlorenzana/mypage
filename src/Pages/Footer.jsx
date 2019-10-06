@@ -1,51 +1,33 @@
 import React, { Component } from 'react';
-import Sprite from '../Icons/sprite.svg';
+import SVGIcon from '../Components/svg';
 
 class Footer extends Component {
     render() {
+        const { icons, accounts, technologies, contacts } = this.props;
+        
         const element = (
             <section id="footer" className="Footer">
                 <div className="social">
                     <ul>
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://web.facebook.com/strife08?_rdc=1&_rdr">
-                                <svg>
-                                    <use xlinkHref={`${Sprite}#icon-facebook`}></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/efraimlorenzana">
-                                <svg>
-                                    <use xlinkHref={`${Sprite}#icon-github`}></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.codepen.io/efraimlorenzana/">
-                                <svg>
-                                    <use xlinkHref={`${Sprite}#icon-codepen`}></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.gitlab.com/efraim.lorenzana">
-                                <svg>
-                                    <use xlinkHref={`${Sprite}#icon-gitlab`}></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/efraim-lorenzana-4bbb2575/">
-                                <svg>
-                                    <use xlinkHref={`${Sprite}#icon-linkedin`}></use>
-                                </svg>
-                            </a>
-                        </li>
+                       {
+                            accounts.map(a => {
+                                return a.status === 'PUBLISHED' ? (
+                                    <li key={a.id}>
+                                        <a 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            href={a.link}
+                                        >
+                                            <svg>
+                                                <use xlinkHref={`#${icons[a.svgIcon.id].iconClass}`}>
+                                                    <SVGIcon key={a.id} icon={icons[a.svgIcon.id]} />
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                ) : null
+                            })
+                        }
                     </ul>
                 </div>
 
@@ -57,118 +39,65 @@ class Footer extends Component {
                             <h2>Technologies</h2>
 
                             <div className="tech-gallery">
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-html5`}></use>
-                                    </svg>
-                                    <div>
-                                        HTML 5 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-css3`}></use>
-                                    </svg>
-                                    <div>
-                                        CSS 3 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-javascript`}></use>
-                                    </svg>
-                                    <div>
-                                        Javascript 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-git`}></use>
-                                    </svg>
-                                    <div>
-                                        Git 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-react`}></use>
-                                    </svg>
-                                    <div>
-                                        ReactJS
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-node-dot-js`}></use>
-                                    </svg>
-                                    <div>
-                                        NodeJS 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-php`}></use>
-                                    </svg>
-                                    <div>
-                                        PHP 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-laravel`}></use>
-                                    </svg>
-                                    <div>
-                                        Laravel 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-visualstudiocode`}></use>
-                                    </svg>
-                                    <div>
-                                        ASP.net MVC C# 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-microsoftexcel`}></use>
-                                    </svg>
-                                    <div>
-                                        Excel, VBA and Macro 
-                                    </div>
-                                </span>
-                                <span>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-mysql`}></use>
-                                    </svg>
-                                    <div>
-                                        MySQL
-                                    </div>
-                                </span>
+                                {
+                                    technologies.map(t => {
+                                        return t.status === 'PUBLISHED' ? (
+                                            <span key={t.id}>
+                                                {
+                                                    t.svgIcon !== null ? (
+                                                        <svg>
+                                                            <use xlinkHref={`#${icons[t.svgIcon.id].iconClass}`}>
+                                                                <SVGIcon key={t.id} icon={icons[t.svgIcon.id]} />
+                                                            </use>
+                                                        </svg>
+                                                    ) : (
+                                                        <img 
+                                                            src={`https://media.graphcms.com/${t.icon.handle}`} 
+                                                            alt={t.languageName}
+                                                            width='50px'
+                                                        />
+                                                    )
+                                                }
+                                                <div>
+                                                    {t.languageName} 
+                                                </div>
+                                            </span>
+                                        ) : null
+                                    })
+                                }
                             </div>
                         </div>
 
                         <div className="col1">
                             <h2 id="contact">Contact</h2>
                             <ul>
-                                <li>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-phone`}></use>
-                                    </svg>
-                                    <span>+63 906 0082 533</span>
-                                </li>
-                                <li>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-phone`}></use>
-                                    </svg>
-                                    <span>+63 912 5916 099</span>
-                                </li>
-                                <li>
-                                    <svg>
-                                        <use xlinkHref={`${Sprite}#icon-mail2`}></use>
-                                    </svg>
-                                    <span>efraim.lorenzana@gmail.com</span>
-                                </li>
+                                {
+                                    contacts.map(c => {
+                                        return c.status === 'PUBLISHED' ? (
+                                            <li key={c.id} style={{minWidth: '200px'}}>
+                                                {
+                                                    c.svgIcon !== null ? (
+                                                        <svg>
+                                                            <use xlinkHref={`#${icons[c.svgIcon.id].iconClass}`}>
+                                                                <SVGIcon key={c.id} icon={icons[c.svgIcon.id]} />
+                                                            </use>
+                                                        </svg>
+                                                    ) : (
+                                                        <img 
+                                                            src={`https://media.graphcms.com/${c.mediaIcon.handle}`} 
+                                                            alt={c.title}
+                                                            width='20px'
+                                                            style={{marginRight: '10px'}}
+                                                        />
+                                                    )
+                                                }
+                                                <span>
+                                                    {c.info} 
+                                                </span>
+                                            </li>
+                                        ) : null
+                                    })
+                                }
                             </ul>
                         </div>
                     </div>

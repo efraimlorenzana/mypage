@@ -10,7 +10,7 @@ class Portfolio extends Component {
                 <div className="Portfolio__gallery">
                     {
                         this.props.projects.map((d, i) => {
-                            return d.status === 'PUBLISHED' ? <Project key={i} details={d} /> : null
+                            return d.status === 'PUBLISHED' ? <Project key={i} details={d} icons={this.props.svg} /> : null
                         })
                     }
                 </div>

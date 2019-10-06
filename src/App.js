@@ -11,6 +11,7 @@ class App extends Component {
       super();
       this.state = {
           data : {},
+          SVG_ICONS : {},
           isLoading: true
       }
   }
@@ -19,15 +20,29 @@ class App extends Component {
       /// Retrieved personalInfoes schema data from GraphqlCMS
       const data = await request(GRAPHCMS_ENDPOINT, GRAPHQL_QUERY_ALL);
       this.setState({ data });
-      this.setState({isLoading : false});
+
+      const SVG_ICONS = await this.handleSvgIcons(data);
+      this.setState({ SVG_ICONS });
+      this.setState({ isLoading : false });
   }
+  
+  handleSvgIcons = (data) => {
+    const SVG_ICONS = {};
+
+    data.svgIcons.map(i => {
+        SVG_ICONS[i.id] = i;
+    });
+
+    return SVG_ICONS;
+  }
+
   render() {
-    const { data, isLoading } = this.state;
-    //console.log(data);
+    const { data, isLoading, SVG_ICONS } = this.state;
+    
     return isLoading ? <img className="loading-ui" src={Loading} alt="Loading..." /> : (
       <main className="App">
         <Navigation />
-        <Content data={data}/>
+        <Content data={data} SVG_ICONS_OBJECT={SVG_ICONS}/>
       </main>
     );
   }

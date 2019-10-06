@@ -1,10 +1,12 @@
 import React from 'react';
-import Sprite from '../../Icons/sprite.svg';
+import SVGIcon from '../svg';
 
-const Project = ({details}) => {
-    const icon = details.site === "#"
-                 ? `${Sprite}#icon-visibility_off`
-                 : `${Sprite}#icon-visibility`;
+const Project = ({ details, icons }) => {
+    const SVG_ICON = details.domainName !== "#"
+                 ? icons[details.projectSiteLinkIconAvailable.id]
+                 : icons[details.projectSiteLinkIconNotAvailable.id];
+    
+    let github = icons[details.githubIcon.id];
 
     const elements = (
         <div className="project">
@@ -23,13 +25,17 @@ const Project = ({details}) => {
                 
                 <a target="_blank" rel="noopener noreferrer" href={`${details.github}`} className="project__repo">
                     <svg className="project__icon--site">
-                        <use xlinkHref={`${Sprite}#icon-github`}></use>
+                        <use xlinkHref={`#${github.iconClass}`}>
+                            <SVGIcon icon={github} />
+                        </use>
                     </svg>
                 </a>
 
                 <a  target="_blank" rel="noopener noreferrer" href={`${details.domainName}`} className="project__site">
                     <svg className="project__icon--site">
-                        <use xlinkHref={icon}></use>
+                        <use xlinkHref={`#${SVG_ICON.iconClass}`}>
+                            <SVGIcon icon={SVG_ICON} />
+                        </use>
                     </svg>
                 </a>
 
