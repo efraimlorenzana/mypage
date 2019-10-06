@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 class Content extends Component {
     render () {
-        const { personalInfoes, skillSets, projects, achievements, workHistories, svgIcons, socialAccounts, technologies, contactDetailses } = this.props.data;
+        const { personalInfoes, skillSets, projects, achievements, workHistories, socialAccounts, technologies, contactDetailses } = this.props.data;
 
         return (
             <div className="content">
@@ -23,7 +23,6 @@ class Content extends Component {
                 <Footer 
                     accounts={socialAccounts} 
                     icons={this.props.SVG_ICONS_OBJECT}
-                    svg={svgIcons} 
                     technologies={technologies} 
                     contacts={contactDetailses}
                 />
