@@ -24,7 +24,7 @@ const Navigation = () => {
                     <a href="#portfolio" className="navigation__link">My Work</a>
                 </li>
                 <li className="navigation__item">
-                    <a href="#achievement" className="navigation__link">Achievement</a>
+                    <a href="#achievement" className="navigation__link">Certification</a>
                 </li>
                 <li className="navigation__item">
                     <a href="https://docs.google.com/document/d/1vKiiNvR-zK9fsNcrNvHZ7Y0DgPt22-Szs6noFvhx420/edit?usp=sharing" 

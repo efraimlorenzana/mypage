@@ -5,7 +5,7 @@ class Achievement extends Component {
     render () {
         const elements = (
             <section id="achievement" className="Achievement">
-                <h2>Achievement</h2>
+                <h2>Certification</h2>
 
                 <div className="gallery">
                     {

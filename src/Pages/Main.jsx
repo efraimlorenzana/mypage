@@ -30,14 +30,17 @@ class Main extends Component {
     render() {
         const { 
             lastname, firstname, middlename,
-            professionTitle, avatar, bio
+            professionTitle, avatar, bio, bannerImage
         } = this.props.PersonalInfo;
 
         let fullname = `${firstname} ${middlename} ${lastname}`;
+        const style = {
+            backgroundImage: `url(${bannerImage.url})`
+        };
         
         const elements = (
             <section id="main" className="main">
-                <div className="main__heading">
+                <div className="main__heading" style={style}>
                     <h1 className="main__heading-title">
                         Hi! Im
                         <span className="main__heading-title--name">

@@ -8,6 +8,12 @@ personalInfoes {
     lastname
     bio
     professionTitle
+    bannerImage {
+      id
+      url
+      handle
+      fileName
+    }
     avatar {
         handle
     }

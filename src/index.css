@@ -13,10 +13,10 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --shadow-dark: 0 1px 2px 1px rgba(0, 0, 0, .5);
-  --color-heading-bg: #333;
+  --color-heading-bg: #0a0a0a91;
   --color-progress-bar: #0fe60c;
   --color-progress-label: #faf9f9;
-  --color-project-bg:#f7efeff2; }
+  --color-project-bg:#ffffff; }
 
 *::before,
 *,
@@ -85,49 +85,47 @@ hr {
   z-index: 99999; }
 
 .achievement-file {
-  padding: 3rem;
+  margin: 3rem;
+  padding: 1rem;
   text-align: center;
   border: 1px solid var(--color-primary);
-  border-radius: 10px;
-  background-color: var(--color-project-bg);
+  background-color: #ffffff;
   box-shadow: var(--shadow-dark);
   position: relative;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  display: flex; }
   @media only screen and (max-width: 31.25em) {
     .achievement-file {
-      padding: 2rem; } }
+      padding: 2rem;
+      display: block; } }
   @media only screen and (max-width: 25em) {
     .achievement-file {
       margin: 1rem; } }
-  .achievement-file__embeded {
-    width: 100%;
-    height: 30rem; }
-  @media only screen and (max-width: 31.25em) {
-    .achievement-file h2 {
-      font-size: 2rem; } }
-  .achievement-file > span.sub-value {
-    display: block;
-    font-weight: 700;
-    letter-spacing: 2px; }
-    .achievement-file > span.sub-value:nth-child(4) {
-      margin-bottom: 2rem; }
-  .achievement-file img {
-    width: 40rem; }
+  .achievement-file > .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px; }
     @media only screen and (max-width: 31.25em) {
-      .achievement-file img {
-        width: 34rem; } }
-    @media only screen and (max-width: 25em) {
-      .achievement-file img {
-        width: 32rem; } }
+      .achievement-file > .details {
+        width: 100%;
+        margin-bottom: 10px; } }
+    .achievement-file > .details > span {
+      font-weight: 700;
+      letter-spacing: 2px; }
+  .achievement-file > .picture {
+    position: relative; }
+    .achievement-file > .picture > img {
+      width: 100%;
+      max-width: 500px; }
   .achievement-file > a {
     position: absolute;
-    bottom: 2rem;
-    right: 2rem; }
+    right: 2rem;
+    bottom: -2rem;
+    width: 50px; }
     .achievement-file > a > svg {
-      width: 6rem;
-      height: 6rem;
-      pointer-events: none;
-      fill: currentColor; }
+      width: inherit; }
 
 .right {
   display: flex;
@@ -711,13 +709,9 @@ hr {
     clear: both; }
   .Achievement > h2 {
     color: #ffffff; }
-  .Achievement .gallery {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; }
 
 .App {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
   min-height: 90vh;
   max-width: 1200px;
   margin: 0 auto; }
@@ -936,7 +930,6 @@ hr {
   align-items: center;
   justify-content: center;
   background-color: var(--color-heading-bg);
-  background-image: url("./Data/Images/main.jpg");
   background-blend-mode: color;
   background-attachment: fixed;
   background-size: cover;
