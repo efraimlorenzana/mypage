@@ -425,11 +425,11 @@ $content5:#975fb4;
       // }
 
       @include respond(res900) {
-          min-width: 400px;
+          min-width: 350px;
       }
 
       @include respond(res800) {
-        min-width: 350px;
+        min-width: 260px;
       }
 
       @include respond(res700) {
@@ -452,9 +452,9 @@ $content5:#975fb4;
         min-width: 210px;
       }
 
-      @include minScreen(1920) {
-        min-width: 291px;
-      }
+      // @include minScreen(1920) {
+      //   min-width: 291px;
+      // }
       
       &::before {
         content: '';
@@ -558,10 +558,10 @@ $content5:#975fb4;
     & > .content {
       //background-color: skyblue;
       padding: 10px;
-      min-width: 330px;
+      min-width: 310px;
 
       @include maxScreen(1200) {
-          min-width: 300px;
+          min-width: 310px;
       }
 
       @include respond(res900) {
@@ -589,25 +589,25 @@ $content5:#975fb4;
         font-size: 10px;
       }
 
-      @include minScreen(1360) {
-        min-width: 350px;
+      @include minScreen(1200) {
+        min-width: 310px;
       }
 
-      @include minScreen(1405) {
-        min-width: 408px;
-      }
+      // @include minScreen(1405) {
+      //   min-width: 408px;
+      // }
 
-      @include minScreen(1532) {
-        min-width: 450px;
-      }
+      // @include minScreen(1532) {
+      //   min-width: 450px;
+      // }
 
-      @include minScreen(1633) {
-        min-width: 456px;
-      }
+      // @include minScreen(1633) {
+      //   min-width: 456px;
+      // }
 
-      @include minScreen(1920) {
-        min-width: 492px;
-      }
+      // @include minScreen(1920) {
+      //   min-width: 492px;
+      // }
       
       & > h4 {
         margin: 0;

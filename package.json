@@ -2,7 +2,7 @@
   "name": "portfoliov3",
   "version": "0.2.0",
   "private": true,
-  "homepage": "http://efraimlorenzana.github.io/mypage",
+  "homepage": "http://efraimlorenzana.github.io",
   "dependencies": {
     "browserslist": "^4.7.0",
     "caniuse-lite": "^1.0.30000998",

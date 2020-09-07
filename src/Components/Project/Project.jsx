@@ -5,8 +5,9 @@ const Project = ({ details, icons }) => {
     const SVG_ICON = details.domainName !== "#"
                  ? icons[details.projectSiteLinkIconAvailable.id]
                  : icons[details.projectSiteLinkIconNotAvailable.id];
-    
+
     let github = icons[details.githubIcon.id];
+
 
     const elements = (
         <div className="project">

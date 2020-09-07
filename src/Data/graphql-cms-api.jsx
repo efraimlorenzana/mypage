@@ -14,15 +14,15 @@ personalInfoes {
 }`;
 
 let skills = `
-skillSets {
-    status
-    technology
-    knowledgeLevel
+skillSets (stage: PUBLISHED) {
+  stage
+  technology
+  knowledgeLevel
 }`;
 
 let projects = `
-projects {
-    status
+projects (stage: PUBLISHED) {
+    stage
     posterImage {
        handle
     }
@@ -43,8 +43,8 @@ projects {
 }`;
 
 let achievements = `
-achievements {
-    status
+achievements (stage: PUBLISHED) {
+    stage
     title
     source
     issuer
@@ -56,8 +56,8 @@ achievements {
   }`;
 
   let workHistories = `
-  workHistories {
-    status
+  workHistories (stage: PUBLISHED) {
+    stage
     id
     logo {
       handle
@@ -75,7 +75,7 @@ achievements {
 
   let SVGIcons = `
   svgIcons {
-    status
+    stage
     id
     title
     viewBox
@@ -85,8 +85,8 @@ achievements {
   }`;
 
   let SocialAccounts = `
-  socialAccounts {
-    status
+  socialAccounts (stage: PUBLISHED) {
+    stage
     id
     organization
     link
@@ -96,8 +96,8 @@ achievements {
   }`;
 
   let techs = `
-  technologies{
-    status
+  technologies (stage: PUBLISHED) {
+    stage
     id
     languageName
     svgIcon {
@@ -110,8 +110,8 @@ achievements {
   }`;
 
   let contacts = `
-  contactDetailses {
-    status
+  contactDetailses (stage: PUBLISHED) {
+    stage
     id
     title
     type

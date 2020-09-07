@@ -10,9 +10,7 @@ class Achievement extends Component {
                 <div className="gallery">
                     {
                         this.props.achievements.map((d,i) => {
-                            return d.status === 'PUBLISHED' ? 
-                                   <AchievementFile key={i} details={d} /> :
-                                   null
+                            return <AchievementFile key={i} details={d} />
                         })
                     }
                 </div>

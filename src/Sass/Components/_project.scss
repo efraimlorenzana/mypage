@@ -3,7 +3,7 @@
     background-color: var(--color-project-bg);
     margin-bottom: 3rem;
     position: relative;
-    border: 1px solid var(--color-primary);
+    border: 1px solid #ffffff;
     box-shadow: var(--shadow-dark);
 
     @include respond(res600) {

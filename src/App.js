@@ -24,21 +24,20 @@ class App extends Component {
       const SVG_ICONS = await this.handleSvgIcons(data);
       this.setState({ SVG_ICONS });
       this.setState({ isLoading : false });
+      
   }
   
   handleSvgIcons = (data) => {
     const SVG_ICONS = {};
 
-    data.svgIcons.map(i => {
-        SVG_ICONS[i.id] = i;
-    });
+    data.svgIcons.map(i => SVG_ICONS[i.id] = i);
 
     return SVG_ICONS;
   }
-
+  
   render() {
     const { data, isLoading, SVG_ICONS } = this.state;
-    
+   
     return isLoading ? <img className="loading-ui" src={Loading} alt="Loading..." /> : (
       <main className="App">
         <Navigation />

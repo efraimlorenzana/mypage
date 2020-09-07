@@ -11,7 +11,7 @@ class Footer extends Component {
                     <ul>
                        {
                             accounts.map(a => {
-                                return a.status === 'PUBLISHED' ? (
+                                return a.stage === 'PUBLISHED' ? (
                                     <li key={a.id}>
                                         <a 
                                             target="_blank" 
@@ -41,7 +41,7 @@ class Footer extends Component {
                             <div className="tech-gallery">
                                 {
                                     technologies.map(t => {
-                                        return t.status === 'PUBLISHED' ? (
+                                        return t.stage === 'PUBLISHED' ? (
                                             <span key={t.id}>
                                                 {
                                                     t.svgIcon !== null ? (
@@ -73,7 +73,7 @@ class Footer extends Component {
                             <ul>
                                 {
                                     contacts.map(c => {
-                                        return c.status === 'PUBLISHED' ? (
+                                        return c.stage === 'PUBLISHED' ? (
                                             <li key={c.id} style={{minWidth: '200px'}}>
                                                 {
                                                     c.svgIcon !== null ? (

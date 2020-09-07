@@ -96,7 +96,7 @@
         @include respond(res1000) {
             opacity: 1;
             visibility: visible;
-            height: 35rem;
+            height: 100vh;
             background-color: white;
             // margin-top: -8rem;
         }
@@ -195,7 +195,7 @@
 
 .sticky {
     @include respond(res1000) {
-        background-color: transparent;
+        background-color: #ffffff;
         border: none;
     }
 }

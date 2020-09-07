@@ -49,7 +49,7 @@ class Experience extends Component {
 
                     {
                         this.props.workHistories.map((d, i) => {
-                            return d.status === 'PUBLISHED' ? <JobExp key={i} detail={d} /> : null
+                            return <JobExp key={i} detail={d} />
                         })
                     }
                 </div>

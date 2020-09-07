@@ -11,7 +11,7 @@ class Skills extends Component {
                 
                 {
                     this.props.skills.map((d, i) => {
-                        return d.status === 'PUBLISHED' ? <ProgressBar key={i} data={d} /> : null
+                        return <ProgressBar key={i} data={d} />
                     })
                 }
             </section>

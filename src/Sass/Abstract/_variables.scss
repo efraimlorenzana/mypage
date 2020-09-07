@@ -1,7 +1,11 @@
 :root {
-    --color-primary: #eb2f64;
-    --color-primary-light:#FF3366;
-    --color-primary-dark: #BA265D;
+    // --color-primary: #eb2f64;
+    // --color-primary-light:#FF3366;
+    // --color-primary-dark: #BA265D;
+
+    --color-primary: #605e5e;
+    --color-primary-light:#101010;
+    --color-primary-dark: #333232;
 
     // --color-primary: blue;
     // --color-primary-light:red;
@@ -20,7 +24,7 @@
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
 
-    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .5);
+    --shadow-dark: 0 1px 2px 1px rgba(0, 0, 0, .5);
 
     ///Main Section
     --color-heading-bg: #333;

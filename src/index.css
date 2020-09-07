@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light:#FF3366;
-  --color-primary-dark: #BA265D;
+  --color-primary: #605e5e;
+  --color-primary-light:#101010;
+  --color-primary-dark: #333232;
   --color-white-1: #ffffff;
   --color-white-2: #e8e8e8;
   --color-white-3: #e0e0e0;
@@ -12,7 +12,7 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .5);
+  --shadow-dark: 0 1px 2px 1px rgba(0, 0, 0, .5);
   --color-heading-bg: #333;
   --color-progress-bar: #0fe60c;
   --color-progress-label: #faf9f9;
@@ -383,10 +383,10 @@ hr {
       text-align: center; }
       @media only screen and (max-width: 56.25em) {
         .em-timeline__data > .tag {
-          min-width: 400px; } }
+          min-width: 350px; } }
       @media only screen and (max-width: 50em) {
         .em-timeline__data > .tag {
-          min-width: 350px; } }
+          min-width: 260px; } }
       @media only screen and (max-width: 43.75em) {
         .em-timeline__data > .tag {
           min-width: 250px; } }
@@ -402,9 +402,6 @@ hr {
       @media only screen and (min-width: 101.3125em) {
         .em-timeline__data > .tag {
           min-width: 210px; } }
-      @media only screen and (min-width: 120em) {
-        .em-timeline__data > .tag {
-          min-width: 291px; } }
       .em-timeline__data > .tag::before {
         content: '';
         display: block;
@@ -470,10 +467,10 @@ hr {
         background-color: #975fb4; }
     .em-timeline__data > .content {
       padding: 10px;
-      min-width: 330px; }
+      min-width: 310px; }
       @media only screen and (max-width: 75em) {
         .em-timeline__data > .content {
-          min-width: 300px; } }
+          min-width: 310px; } }
       @media only screen and (max-width: 56.25em) {
         .em-timeline__data > .content {
           min-width: 400px; } }
@@ -493,21 +490,9 @@ hr {
         .em-timeline__data > .content {
           min-width: 150px;
           font-size: 10px; } }
-      @media only screen and (min-width: 85em) {
+      @media only screen and (min-width: 75em) {
         .em-timeline__data > .content {
-          min-width: 350px; } }
-      @media only screen and (min-width: 87.8125em) {
-        .em-timeline__data > .content {
-          min-width: 408px; } }
-      @media only screen and (min-width: 95.75em) {
-        .em-timeline__data > .content {
-          min-width: 450px; } }
-      @media only screen and (min-width: 102.0625em) {
-        .em-timeline__data > .content {
-          min-width: 456px; } }
-      @media only screen and (min-width: 120em) {
-        .em-timeline__data > .content {
-          min-width: 492px; } }
+          min-width: 310px; } }
       .em-timeline__data > .content > h4 {
         margin: 0;
         text-transform: uppercase;
@@ -579,7 +564,7 @@ hr {
     .navigation__button:checked ~ .navigation__list {
       opacity: 1;
       visibility: visible;
-      height: 35rem;
+      height: 100vh;
       background-color: white; } }
   .navigation__list {
     align-self: stretch; }
@@ -639,7 +624,7 @@ hr {
 
 @media only screen and (max-width: 62.55em) {
   .sticky {
-    background-color: transparent;
+    background-color: #ffffff;
     border: none; } }
 
 .progressBar {
@@ -675,7 +660,7 @@ hr {
   background-color: var(--color-project-bg);
   margin-bottom: 3rem;
   position: relative;
-  border: 1px solid var(--color-primary);
+  border: 1px solid #ffffff;
   box-shadow: var(--shadow-dark); }
   @media only screen and (max-width: 37.5em) {
     .project {
@@ -724,6 +709,8 @@ hr {
     content: '';
     display: table;
     clear: both; }
+  .Achievement > h2 {
+    color: #ffffff; }
   .Achievement .gallery {
     display: flex;
     justify-content: space-evenly;
@@ -731,7 +718,9 @@ hr {
 
 .App {
   background-color: rgba(255, 255, 255, 0.8);
-  min-height: 90vh; }
+  min-height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .Footer {
   background-color: var(--color-grey-dark-1);
@@ -960,7 +949,7 @@ hr {
     text-align: center;
     margin-left: 10rem;
     margin-right: auto;
-    color: var(--color-primary-light);
+    color: #ffffff;
     letter-spacing: 3px; }
     @media only screen and (max-width: 62.55em) {
       .main__heading-title {
@@ -1080,3 +1069,5 @@ hr {
     content: '';
     display: table;
     clear: both; }
+  .Skills > h2 {
+    color: #ffffff; }

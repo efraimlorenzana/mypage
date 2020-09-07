@@ -4,4 +4,8 @@
                     var(--color-primary-light),
                     var(--color-primary-dark));
     padding-bottom: 5rem;
+
+    & > h2 {
+        color: #ffffff;
+    }
 }
