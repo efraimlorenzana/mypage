@@ -1,4 +1,5 @@
-const GRAPHCMS_ENDPOINT = `https://api-apeast.graphcms.com/v1/ck1d1pnat1vxf01c0f95o6ztd/master`;
+// const GRAPHCMS_ENDPOINT = `https://api-apeast.graphcms.com/v1/ck1d1pnat1vxf01c0f95o6ztd/master`;
+const GRAPHCMS_ENDPOINT = `https://api-ap-northeast-1.graphcms.com/v2/ck1d1pnat1vxf01c0f95o6ztd/master`;
 
 let personalInfo = `
 personalInfoes {
