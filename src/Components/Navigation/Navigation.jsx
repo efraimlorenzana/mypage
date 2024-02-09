@@ -39,9 +39,6 @@ const Navigation = () => {
                 <li className="navigation__item">
                     <a href="#experience" className="navigation__link">Experience</a>
                 </li>
-                {/* <li className="navigation__item">
-                    <a href="#contact" className="navigation__link">Contact</a>
-                </li> */}
             </ul>
         </nav>
     );
