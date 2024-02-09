@@ -130,6 +130,12 @@ achievements (stage: PUBLISHED) {
     }
   }`;
 
+  let resume = `
+  resume(stage: PUBLISHED) {
+    url
+    navigationLinkText
+  }`;
+
 const GRAPHQL_QUERY_ALL = `{
     ${personalInfo},
     ${skills},
@@ -139,7 +145,8 @@ const GRAPHQL_QUERY_ALL = `{
     ${SVGIcons},
     ${SocialAccounts},
     ${techs},
-    ${contacts}
+    ${contacts},
+    ${resume}
 }`;
 
 module.exports = {
