@@ -145,7 +145,8 @@ const GRAPHQL_QUERY_ALL = `{
     ${SVGIcons},
     ${SocialAccounts},
     ${techs},
-    ${contacts}
+    ${contacts},
+    ${resume}
 }`;
 
 module.exports = {
