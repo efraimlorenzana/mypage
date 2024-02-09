@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.287ec17d.css",
-    "main.js": "/static/js/main.77d3c302.js",
-    "static/media/loading.gif": "/static/media/loading.0c9a77b207fb76d0a7f8.gif",
-    "static/media/sprite.svg": "/static/media/sprite.575d3440546ecf718b7d58eac41f3f27.svg",
-    "index.html": "/index.html",
-    "main.287ec17d.css.map": "/static/css/main.287ec17d.css.map",
-    "main.77d3c302.js.map": "/static/js/main.77d3c302.js.map"
+    "main.css": "/mypage/static/css/main.287ec17d.css",
+    "main.js": "/mypage/static/js/main.1096cada.js",
+    "static/media/loading.gif": "/mypage/static/media/loading.0c9a77b207fb76d0a7f8.gif",
+    "static/media/sprite.svg": "/mypage/static/media/sprite.575d3440546ecf718b7d58eac41f3f27.svg",
+    "index.html": "/mypage/index.html",
+    "main.287ec17d.css.map": "/mypage/static/css/main.287ec17d.css.map",
+    "main.1096cada.js.map": "/mypage/static/js/main.1096cada.js.map"
   },
   "entrypoints": [
     "static/css/main.287ec17d.css",
-    "static/js/main.77d3c302.js"
+    "static/js/main.1096cada.js"
   ]
 }
