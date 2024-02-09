@@ -40,7 +40,7 @@ class App extends Component {
    
     return isLoading ? <img className="loading-ui" src={Loading} alt="Loading..." /> : (
       <main className="App">
-        <Navigation resume={data.resume} />
+        <Navigation resume={data.resumes} />
         <Content data={data} SVG_ICONS_OBJECT={SVG_ICONS}/>
       </main>
     );

@@ -131,7 +131,7 @@ achievements (stage: PUBLISHED) {
   }`;
 
   let resume = `
-  resume(stage: PUBLISHED) {
+  resumes (stage: PUBLISHED) {
     url
     navigationLinkText
   }`;
