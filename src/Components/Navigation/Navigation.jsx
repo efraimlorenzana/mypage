@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from './logo.png';
 
 const Navigation = () => {
+    const { url, navigationLinkText } = this.props.resume;
     const elements = (
         <nav className="navigation sticky">
             <div className="navigation__logo">
@@ -27,12 +28,12 @@ const Navigation = () => {
                     <a href="#achievement" className="navigation__link">Certification</a>
                 </li>
                 <li className="navigation__item">
-                    <a href="https://docs.google.com/document/d/1vKiiNvR-zK9fsNcrNvHZ7Y0DgPt22-Szs6noFvhx420/edit?usp=sharing" 
+                    <a href={url} 
                     className="navigation__link"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
-                        Resume
+                        navigationLinkText
                     </a>
                 </li>
                 <li className="navigation__item">
