@@ -1064,3 +1064,342 @@ hr {
     clear: both; }
   .Skills > h2 {
     color: #ffffff; }
+
+/* Navigation Login Link */
+.navigation__item--login {
+  margin-left: auto; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__item--login {
+      margin-left: 0; } }
+
+.navigation__link--login {
+  background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%);
+  color: #fff !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease; }
+  .navigation__link--login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4); }
+
+/* Resume Section */
+.resume-section {
+  padding: 5rem;
+  background-color: var(--color-white-1);
+  min-height: auto; }
+  @media only screen and (max-width: 50em) {
+    .resume-section {
+      padding: 2rem; } }
+
+.resume-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (max-width: 50em) {
+    .resume-section__header {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center; } }
+
+.resume-section__title {
+  font-size: 2.4rem;
+  color: var(--color-grey-dark-1);
+  letter-spacing: 3px; }
+
+.resume-section__download-btn {
+  padding: 1.2rem 2.4rem;
+  background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .resume-section__download-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4); }
+  .resume-section__download-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed; }
+
+.resume-section__content {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.resume-preview-public {
+  background: #ffffff;
+  color: #333;
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  line-height: 1.6; }
+  @media only screen and (max-width: 50em) {
+    .resume-preview-public {
+      padding: 2rem; } }
+
+.resume-preview-public__header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #333; }
+
+.resume-preview-public__name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  color: #1a1a2e;
+  letter-spacing: 2px; }
+
+.resume-preview-public__contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #555; }
+  .resume-preview-public__contact span {
+    white-space: nowrap; }
+
+.resume-preview-public__section {
+  margin-bottom: 2.5rem; }
+  .resume-preview-public__section h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    letter-spacing: 1px; }
+  .resume-preview-public__section p,
+  .resume-preview-public__section div {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8; }
+  .resume-preview-public__section ul {
+    margin: 0;
+    padding-left: 2rem; }
+  .resume-preview-public__section li {
+    margin-bottom: 0.5rem; }
+
+.resume-preview-public__skills {
+  list-style: none;
+  padding: 0; }
+  .resume-preview-public__skills li {
+    margin-bottom: 0.8rem; }
+
+.resume-preview-public__experience,
+.resume-preview-public__education {
+  margin-bottom: 2rem; }
+
+.resume-preview-public__exp-header,
+.resume-preview-public__edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem; }
+
+.resume-preview-public__period,
+.resume-preview-public__year {
+  font-style: italic;
+  color: #666;
+  white-space: nowrap; }
+
+.resume-preview-public__institution {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem; }
+
+.resume-preview-public__certifications {
+  list-style: disc;
+  padding-left: 2rem; }
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 5rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: auto; }
+  @media only screen and (max-width: 50em) {
+    .testimonials-section {
+      padding: 2rem; } }
+
+.testimonials-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (max-width: 50em) {
+    .testimonials-section__header {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center; } }
+
+.testimonials-section__title {
+  font-size: 2.4rem;
+  color: #fff;
+  letter-spacing: 3px; }
+
+.testimonials-section__add-btn {
+  padding: 1.2rem 2.4rem;
+  background: rgba(79, 195, 247, 0.2);
+  border: 1px solid rgba(79, 195, 247, 0.4);
+  border-radius: 8px;
+  color: #4fc3f7;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .testimonials-section__add-btn:hover {
+    background: rgba(79, 195, 247, 0.3);
+    border-color: #4fc3f7; }
+
+.testimonials-section__success {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.4rem; }
+
+.testimonials-section__form-container {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .testimonials-section__form-container {
+      padding: 2rem; } }
+
+.testimonials-section__form h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.testimonials-section__error {
+  background: rgba(255, 82, 82, 0.2);
+  color: #ff5252;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem; }
+
+.testimonials-section__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 50em) {
+    .testimonials-section__form-row {
+      grid-template-columns: 1fr; } }
+
+.testimonials-section__form-group {
+  margin-bottom: 1.5rem; }
+  .testimonials-section__form-group label {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem; }
+  .testimonials-section__form-group input,
+  .testimonials-section__form-group textarea {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.4rem;
+    box-sizing: border-box; }
+    .testimonials-section__form-group input:focus,
+    .testimonials-section__form-group textarea:focus {
+      outline: none;
+      border-color: #4fc3f7; }
+    .testimonials-section__form-group input::placeholder,
+    .testimonials-section__form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.4); }
+  .testimonials-section__form-group textarea {
+    resize: vertical;
+    min-height: 12rem; }
+
+.testimonials-section__submit-btn {
+  width: 100%;
+  padding: 1.4rem 2.4rem;
+  background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .testimonials-section__submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4); }
+  .testimonials-section__submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed; }
+
+.testimonials-section__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 50em) {
+    .testimonials-section__list {
+      grid-template-columns: 1fr; } }
+
+.testimonials-section__card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.3s ease; }
+  .testimonials-section__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+
+.testimonials-section__message {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 2rem; }
+
+.testimonials-section__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem; }
+  .testimonials-section__author strong {
+    color: #fff;
+    font-size: 1.4rem; }
+  .testimonials-section__author span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem; }
+
+.testimonials-section__empty {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  padding: 4rem;
+  grid-column: 1 / -1; }
+  .testimonials-section__empty p {
+    margin: 0; }
