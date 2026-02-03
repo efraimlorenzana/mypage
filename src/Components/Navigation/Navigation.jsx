@@ -1,10 +1,14 @@
 import React, { Component }  from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './logo.png';
 
 
 class Navigation extends Component {
     render() {
-        const { url, navigationLinkText } = this.props.resume[0];
+        const resume = this.props.resume && this.props.resume[0];
+        const url = resume?.url || '#resume';
+        const navigationLinkText = resume?.navigationLinkText || 'Resume';
+        
         const elements = (
             <nav className="navigation sticky">
                 <div className="navigation__logo">
@@ -30,16 +34,18 @@ class Navigation extends Component {
                         <a href="#achievement" className="navigation__link">Certification</a>
                     </li>
                     <li className="navigation__item">
-                        <a href={url} 
-                        className="navigation__link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            {navigationLinkText}
-                        </a>
+                        <a href="#resume" className="navigation__link">Resume</a>
                     </li>
                     <li className="navigation__item">
                         <a href="#experience" className="navigation__link">Experience</a>
+                    </li>
+                    <li className="navigation__item">
+                        <a href="#testimonials" className="navigation__link">Testimonials</a>
+                    </li>
+                    <li className="navigation__item navigation__item--login">
+                        <Link to="/admin/login" className="navigation__link navigation__link--login">
+                            Login
+                        </Link>
                     </li>
                 </ul>
             </nav>

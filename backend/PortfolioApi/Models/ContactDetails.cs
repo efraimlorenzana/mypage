@@ -6,8 +6,20 @@ public class ContactDetails
 {
     public int Id { get; set; }
     
-    [Required]
-    public string Title { get; set; } = string.Empty;
+    // Store as JSON string for multiple emails
+    public string? EmailsJson { get; set; }
+    
+    // Store as JSON string for multiple phones
+    public string? PhonesJson { get; set; }
+    
+    public string? Address { get; set; }
+    
+    public string? City { get; set; }
+    
+    public string? Country { get; set; }
+    
+    // Legacy fields for backward compatibility
+    public string? Title { get; set; }
     
     public string? Type { get; set; }
     

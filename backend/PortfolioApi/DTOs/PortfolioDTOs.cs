@@ -188,6 +188,26 @@ public class CreateSvgIconDto
     public string? Fill { get; set; }
 }
 
+public class TestimonialDto
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string? Company { get; set; }
+    public string? Role { get; set; }
+    public string Message { get; set; } = string.Empty;
+    public bool Approved { get; set; }
+}
+
+public class CreateTestimonialDto
+{
+    public string Name { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string? Company { get; set; }
+    public string? Role { get; set; }
+    public string Message { get; set; } = string.Empty;
+}
+
 public class PortfolioDataDto
 {
     public List<PersonalInfoDto> PersonalInfoes { get; set; } = new();
@@ -200,4 +220,5 @@ public class PortfolioDataDto
     public List<ContactDetailsDto> ContactDetailses { get; set; } = new();
     public List<ResumeDto> Resumes { get; set; } = new();
     public List<SvgIconDto> SvgIcons { get; set; } = new();
+    public List<TestimonialDto> Testimonials { get; set; } = new();
 }

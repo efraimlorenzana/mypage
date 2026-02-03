@@ -4,9 +4,9 @@ import { portfolioService } from '../../services/api';
 
 const fields = [
     { name: 'title', label: 'Title', required: true },
-    { name: 'description', label: 'Description', type: 'textarea' },
+    { name: 'description', label: 'Description', type: 'richtext' },
     { name: 'dateAchieved', label: 'Date Achieved' },
-    { name: 'imageUrl', label: 'Image URL' },
+    { name: 'image', label: 'Achievement Image', type: 'image' },
 ];
 
 const AchievementsPage = () => {

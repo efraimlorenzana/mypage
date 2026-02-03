@@ -3,8 +3,8 @@ import CrudManager from '../components/CrudManager';
 import { portfolioService } from '../../services/api';
 
 const fields = [
-    { name: 'email', label: 'Email' },
-    { name: 'phone', label: 'Phone' },
+    { name: 'emails', label: 'Email Addresses', type: 'array', itemLabel: 'Email' },
+    { name: 'phones', label: 'Phone Numbers', type: 'array', itemLabel: 'Phone' },
     { name: 'address', label: 'Address' },
     { name: 'city', label: 'City' },
     { name: 'country', label: 'Country' },
@@ -19,6 +19,7 @@ const ContactDetailsPage = () => {
             createItem={portfolioService.createContactDetails}
             updateItem={portfolioService.updateContactDetails}
             deleteItem={portfolioService.deleteContactDetails}
+            singleEntry={true}
         />
     );
 };

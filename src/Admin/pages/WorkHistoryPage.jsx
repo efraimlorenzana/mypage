@@ -9,8 +9,8 @@ const fields = [
     { name: 'durationTo', label: 'Duration To' },
     { name: 'industry', label: 'Industry' },
     { name: 'department', label: 'Department' },
-    { name: 'jobDescription', label: 'Job Description', type: 'textarea' },
-    { name: 'logoUrl', label: 'Logo URL' },
+    { name: 'jobDescription', label: 'Job Description', type: 'richtext' },
+    { name: 'logo', label: 'Company Logo', type: 'image' },
     { name: 'brandColorTag', label: 'Brand Color Tag' },
     { name: 'cardPosition', label: 'Card Position' },
 ];

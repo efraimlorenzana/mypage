@@ -8,8 +8,9 @@ const fields = [
     { name: 'middleName', label: 'Middle Name' },
     { name: 'nickName', label: 'Nickname' },
     { name: 'currentRole', label: 'Current Role' },
-    { name: 'aboutMe', label: 'About Me', type: 'textarea' },
-    { name: 'profilePicture', label: 'Profile Picture URL' },
+    { name: 'aboutMe', label: 'About Me', type: 'richtext' },
+    { name: 'profilePicture', label: 'Profile Picture', type: 'image' },
+    { name: 'bannerImage', label: 'Banner Image', type: 'image' },
 ];
 
 const PersonalInfoPage = () => {
@@ -21,6 +22,7 @@ const PersonalInfoPage = () => {
             createItem={portfolioService.createPersonalInfo}
             updateItem={portfolioService.updatePersonalInfo}
             deleteItem={portfolioService.deletePersonalInfo}
+            singleEntry={true}
         />
     );
 };

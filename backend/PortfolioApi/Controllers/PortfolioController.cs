@@ -111,6 +111,16 @@ public class PortfolioController : ControllerBase
                 Path = s.Path,
                 IconClass = s.IconClass,
                 Fill = s.Fill
+            }).ToListAsync(),
+            Testimonials = await _context.Testimonials.Select(t => new TestimonialDto
+            {
+                Id = t.Id,
+                Name = t.Name,
+                Email = t.Email,
+                Company = t.Company,
+                Role = t.Role,
+                Message = t.Message,
+                Approved = t.Approved
             }).ToListAsync()
         };
 
@@ -752,6 +762,105 @@ public class PortfolioController : ControllerBase
         var item = await _context.SvgIcons.FindAsync(id);
         if (item == null) return NotFound();
         _context.SvgIcons.Remove(item);
+        await _context.SaveChangesAsync();
+        return Ok(new { message = "Deleted successfully" });
+    }
+
+    // Testimonials CRUD
+    [HttpGet("testimonials")]
+    public async Task<ActionResult<List<TestimonialDto>>> GetTestimonials()
+    {
+        return await _context.Testimonials.Select(t => new TestimonialDto
+        {
+            Id = t.Id,
+            Name = t.Name,
+            Email = t.Email,
+            Company = t.Company,
+            Role = t.Role,
+            Message = t.Message,
+            Approved = t.Approved
+        }).ToListAsync();
+    }
+
+    [HttpPost("testimonials")]
+    public async Task<ActionResult<TestimonialDto>> CreateTestimonial(CreateTestimonialDto dto)
+    {
+        var item = new Testimonial
+        {
+            Name = dto.Name,
+            Email = dto.Email,
+            Company = dto.Company,
+            Role = dto.Role,
+            Message = dto.Message,
+            Approved = false
+        };
+        _context.Testimonials.Add(item);
+        await _context.SaveChangesAsync();
+        return Ok(new TestimonialDto
+        {
+            Id = item.Id,
+            Name = item.Name,
+            Email = item.Email,
+            Company = item.Company,
+            Role = item.Role,
+            Message = item.Message,
+            Approved = item.Approved
+        });
+    }
+
+    [HttpPut("testimonials/{id}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult<TestimonialDto>> UpdateTestimonial(int id, CreateTestimonialDto dto)
+    {
+        var item = await _context.Testimonials.FindAsync(id);
+        if (item == null) return NotFound();
+        item.Name = dto.Name;
+        item.Email = dto.Email;
+        item.Company = dto.Company;
+        item.Role = dto.Role;
+        item.Message = dto.Message;
+        item.UpdatedAt = DateTime.UtcNow;
+        await _context.SaveChangesAsync();
+        return Ok(new TestimonialDto
+        {
+            Id = item.Id,
+            Name = item.Name,
+            Email = item.Email,
+            Company = item.Company,
+            Role = item.Role,
+            Message = item.Message,
+            Approved = item.Approved
+        });
+    }
+
+    [HttpPut("testimonials/{id}/approve")]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult<TestimonialDto>> ApproveTestimonial(int id)
+    {
+        var item = await _context.Testimonials.FindAsync(id);
+        if (item == null) return NotFound();
+        item.Approved = true;
+        item.UpdatedAt = DateTime.UtcNow;
+        await _context.SaveChangesAsync();
+        return Ok(new TestimonialDto
+        {
+            Id = item.Id,
+            Name = item.Name,
+            Email = item.Email,
+            Company = item.Company,
+            Role = item.Role,
+            Message = item.Message,
+            Approved = item.Approved
+        });
+    }
+
+    [HttpDelete("testimonials/{id}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult> DeleteTestimonial(int id)
+    {
+        var item = await _context.Testimonials.FindAsync(id);
+        if (item == null) return NotFound();
+        _context.Testimonials.Remove(item);
         await _context.SaveChangesAsync();
         return Ok(new { message = "Deleted successfully" });
     }

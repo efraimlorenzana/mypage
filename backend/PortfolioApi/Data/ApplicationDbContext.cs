@@ -20,6 +20,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<ContactDetails> ContactDetails { get; set; }
     public DbSet<Resume> Resumes { get; set; }
     public DbSet<SvgIcon> SvgIcons { get; set; }
+    public DbSet<Testimonial> Testimonials { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
